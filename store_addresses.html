@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Лес и Дом</title>
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img\favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img\favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img\favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img\favicons/manifest.json">
+	<link rel="mask-icon" href="img\favicons/safari-pinned-tab.svg" color="#55974d">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="libs/normalize/normalize.css" rel="stylesheet">
+	<link href="libs/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+
+	<div class="page-wrapper">
+		<header class="top-header">
+			<div class="top-header__top-line top-line">
+				<div class="top-header__nav-icon"></div>
+
+				<div class="top-header__top-line-container">
+					<nav class="top-header__nav">
+						<a href="#" class="top-header__nav-link top-header__nav-link_active">Главная</a>
+						<a href="#" class="top-header__nav-link"><span class="top-header__nav-icon-percent"></span> Акции</a>
+						<a href="#" class="top-header__nav-link">Оплата и доставка</a>
+						<a href="#" class="top-header__nav-link">Адреса магазинов</a>
+						<a href="#" class="top-header__nav-link">О компании</a>
+						<a href="#" class="top-header__nav-link">Производители</a>
+					</nav>
+					<div class="top-header-authorization">
+						<a href="#" class="top-header__login"><span class="top-header__login-icon"></span> Вход</a> / <a href="#" class="top-header__reg">Регистрация</a>  
+					</div>
+				</div><!-- container -->
+			</div><!-- top-header__top-line -->
+			<div class="top-header__container">
+				<a href="#" class="top-header__logo"><img src="img/home/logo_green.png" alt=""></a>
+				<div class="top-header__info">
+					<div class="top-header__contact">
+						<a href="tel:+7 (8182) 65-27-05" class="top-header__phone">
+							<span class="top-header__phone-icon"></span>
+							+7 (8182) 65-27-05
+						</a>
+						<div class="top-header__schedule">
+							<span class="top-header__schedule-icon"></span>
+							Пн.-Пт: 9:00-18.00
+						</div>
+					</div><!-- top-header__contact -->
+					<form class="top-header__search">
+						<input type="text" class="top-header__search-input" placeholder="Поиск по товарам ...">
+						<label class="top-header__search-btn"><input type="submit" value="" class="top-header__search-btn-icon"></label>
+					</form>
+				</div><!-- top-header__info -->
+				<div class="top-header__basket">
+					<span class="top-header__basket-icon"></span>
+					<span class="top-header__basket-amount">25</span>
+					<div class="top-header__basket-price">
+						товаров на сумму: <br>
+						<span class="top-header__basket-price_large">77 490 <span class="icon-rub top-header__basket-rub"></span>
+					</div>
+				</div><!-- top-header__basket -->
+			</div><!-- top-header__contaier -->
+		</header><!-- top-header -->
+
+
+		<header class="mobile-header">
+			<div class="mobile-header__authorization">
+				<a href="#" class="top-header__login"><span class="top-header__login-icon"></span> Вход</a> / <a href="#" class="top-header__reg">Регистрация</a>  
+			</div>
+
+			<div class="mobile-header__basket">
+				<span class="top-header__basket-icon"></span>
+				<span class="top-header__basket-amount">25</span>
+				<div class="top-header__basket-price">
+					товаров: <br>
+					<span class="top-header__basket-price_large">77 490 <span class="icon-rub top-header__basket-rub"></span>
+				</div>
+			</div><!-- top-header__basket -->
+
+			
+
+			<div class="mobile-header__row">
+				<a href="#" class="mobile-header__logo"><img src="img/home/logo_green.png" alt=""></a>
+
+				<div class="mobile-header__wrapper">
+					<div class="mobile-header__search-toggle">
+						<span class="mobile-header__search-toggle-icon"></span>
+					</div>
+					<div class="mobile-header__contact-toggle">
+						<span class="mobile-header__contact-toggle-icon"></span>
+					</div>
+					<div class="mobile-header__nav-toggle">
+						<span class="mobile-header__nav-toggle-icon"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-header__content">
+				<div class="mobile-header__search">
+					<input type="text" class="top-header__search-input" placeholder="Поиск по товарам ...">
+					<label class="top-header__search-btn"><input type="submit" value="" class="top-header__search-btn-icon"></label>
+				</div>
+
+
+				<div class="mobile-header__contact">
+					<a href="tel:+7 (8182) 65-27-05" class="top-header__phone mobile-header__phone">
+						<span class="top-header__phone-icon"></span>
+						+7 (8182) 65-27-05
+					</a>
+					<div class="top-header__schedule mobile-header__schedule">
+						<span class="top-header__schedule-icon"></span>
+						Пн.-Пт: 9:00-18.00
+					</div>
+				</div>
+
+				<nav class="mobile-header__nav">
+					<a href="#" class="mobile-header__nav-link">Главная 
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+					<a href="#" class="mobile-header__nav-link">% Акции
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+					<a href="#" class="mobile-header__nav-link">Оплата и доставка
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+					<a href="#" class="mobile-header__nav-link">Адреса магазинов
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+					<a href="#" class="mobile-header__nav-link">О компании
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+					<a href="#" class="mobile-header__nav-link">Производители
+						<span class="mobile-header__nav-arrow"></span>
+					</a>
+				</nav>
+			</div>
+		</header><!-- top-header_mobile -->
+
+		<section class="page-container clearfix">
+			<aside class="sidebar sidebar_left">
+				<div class="catalog">
+					<div class="catalog__title"><span class="catalog__title-icon"></span>Каталог товаров
+						<span class="catalog__title-arrow"></span>
+					</div>
+					<div class="catalog__wrapper catalog__wrapper_lg">
+						<div class="catalog__subtitle">
+							<span class="catalog__subtitle-icon"></span> 
+							<span class="catalog__subtitle-text">
+								ТЕХНИКА И ТОВАРЫ <br>
+								ДЛЯ РАБОТЫ
+							</span>
+						</div>
+						<ul>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Компрессоры и
+									пневмоинструмент
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Сварочное оборудование
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Зарядные и пускозарядные
+									устройства
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Грузоподъемное
+									оборудование
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Мойки, пылесосы
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Ручной инструмент и ящики
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Электроинструмент
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Бензоинструмент
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Сельхозтехника
+								</a>
+								<ul class="catalog__sub-menu">
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Мотоблоки
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Мотокультиваторы
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Снегоуборщики
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Мотопомпы
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Техника для полива
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Насосы
+										</a>
+										<ul class="catalog__sub-menu">
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Погружные
+												</a>
+											</li>
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Поверхностные
+												</a>
+											</li>
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Насосные станции
+												</a>
+											</li>
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Бочковые
+												</a>
+											</li>
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Дренажные
+												</a>
+											</li>
+											<li class="catalog__item">
+												<span class="catalog__link-icon"></span>  
+												<a href="#" class="catalog__link">
+													Прочие насосы
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Газонокосилки
+										</a>
+									</li>
+									<li class="catalog__item">
+										<span class="catalog__link-icon"></span>  
+										<a href="#" class="catalog__link">
+											Тракторы
+										</a>
+									</li>
+								</ul> <!-- выпадающий список -->
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Генераторы
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Теплотехника
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Строительное
+									оборудование
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Крепеж и такелаж
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Лестницы
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Станки и расходные
+									материалы
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Упаковочное
+									оборудование
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Расходные материалы
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Запасные части
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Уцененные товары
+								</a>
+							</li>
+
+							<div class="catalog__subtitle">
+								<span class="catalog__subtitle-icon catalog__subtitle-icon_2"></span> 
+								<span class="catalog__subtitle-text">
+									ТЕХНИКА И ТОВАРЫ <br>
+									ДЛЯ ОТДЫХА
+								</span>
+							</div>
+
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Мототехника
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Аксессуары и запасные части
+								</a>
+							</li>
+							<li class="catalog__item">
+								<a href="#" class="catalog__link">
+									Туризм
+								</a>
+							</li>
+						</ul>
+					</div><!-- catalog__wrapper -->
+
+					<div class="catalog__wrapper catalog__wrapper_sm">
+						<div class="catalog__subtitle">
+							<span class="catalog__subtitle-icon"></span> 
+							<span class="catalog__subtitle-text">
+								ТЕХНИКА И ТОВАРЫ <br>
+								ДЛЯ РАБОТЫ
+							</span>
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Компрессоры и
+								пневмоинструмент
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Сварочное оборудование
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Зарядные и пускозарядные устройства
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Грузоподъемное оборудование
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Мойки, пылесосы
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Ручной инструмент и ящики
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Электроинструмент
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Бензоинструмент
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span>  
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Сельхозтехника
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__sub-menu">
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Мотоблоки
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Мотокультиваторы
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Снегоуборщики
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Мотопомпы
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Техника для полива
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Насосы
+								</a>
+							</div>
+							<div class="catalog__sub-menu">
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Погружные
+									</a>
+								</div>
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Поверхностные
+									</a>
+								</div>
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Насосные станции
+									</a>
+								</div>
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Бочковые
+									</a>
+								</div>
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Дренажные
+									</a>
+								</div>
+								<div class="catalog__item">
+									<a href="#" class="catalog__link catalog__link_l3">
+										Прочие насосы
+									</a>
+								</div>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Газонокосилки
+								</a>
+							</div>
+							<div class="catalog__item">
+								<span class="catalog__link-icon catalog__link-icon_sm catalog__link-icon_l2"></span> 
+								<a href="#" class="catalog__link">
+									Тракторы
+								</a>
+							</div>
+						</div><!-- catalog__sub-menu -->
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Генераторы
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Теплотехника
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Строительное оборудование
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Крепеж и такелаж
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Лестницы
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Станки и расходные материалы
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Упаковочное оборудование
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Расходные материалы
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Запасные части
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Уцененные товары
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>	
+						<div class="catalog__subtitle">
+							<span class="catalog__subtitle-icon catalog__subtitle-icon_2"></span> 
+							<span class="catalog__subtitle-text">
+								ТЕХНИКА И ТОВАРЫ <br>
+								ДЛЯ ОТДЫХА
+							</span>
+						</div>
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Мототехника
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>	
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Аксессуары и запасные части
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>	
+						<div class="catalog__item">
+							<a href="#" class="catalog__link">
+								Туризм
+							</a>
+							<span class="catalog__link-icon catalog__link-icon_sm"></span> 
+						</div>	
+					</div><!-- catalog__wrapper -->
+				</div><!-- catalog -->
+			</aside><!-- sidebar sidebar_left -->
+			<div class="content content_lg">
+				<div class="to-top"><a href="#" class="to-top__icon"><img src="img/to-top.png" alt=""></a></div>
+				<div class="bread-crumbs">
+					<a href="#" class="bread-crumbs__home-icon"></a><span class="arrow bread-crumbs__arrow"></span><span class="bread-crumbs__link">Адреса магазинов</span>
+				</div><!-- bread-crumbs -->
+				<div class="page-title">Адреса магазинов</div>
+
+				<div class="address-map">
+					
+				</div><!-- address-map -->
+				<div class="address-table">
+					<div class="address-table__head-row">
+						<div class="address-table__head-col">
+							Магазин
+						</div>
+						<div class="address-table__head-col">
+							Адрес
+						</div>
+						<div class="address-table__head-col">
+							Телефон
+						</div>
+						<div class="address-table__head-col">
+							Режим работы
+						</div>
+					</div>
+					<div class="address-table__title">г. Архангельск</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Центральный магазин</div>
+						<div class="address-table__col">пр. Ломоносова, 135</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Магазин в Соломбале</div>
+						<div class="address-table__col">пр. Никольский, 56/2</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Магазин в ТК "БУМ"</div>
+						<div class="address-table__col">ул. Гагарина, 46</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в ТД "Московский"
+						</div>
+						<div class="address-table__col">пр. Московский, 25/2</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в ТК "На Окружной"
+						</div>
+						<div class="address-table__col">Окружное шоссе, 13</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин-салон "Bosch - Husqvarna"
+						</div>
+						<div class="address-table__col">ул. Тимме, 23</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+
+					<div class="address-table__title">г. Новодвинск</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин на Центральном рынке
+						</div>
+						<div class="address-table__col">ул. Советов, 29/1</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн - пт: 10:00 -19:00</span>
+							<span class="address-table__time">сб - вс: 11:00 -17:00</span>
+						</div>
+					</div>
+
+					<div class="address-table__title">г. Северодвинск</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в ДБ "Северное сияние"
+						</div>
+						<div class="address-table__col">ул. Ломоносова, 75</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн - пт: 10:00 -19:00</span>
+							<span class="address-table__time">сб - вс: 11:00 -17:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин на Архангельском шоссе
+						</div>
+						<div class="address-table__col">
+							Архангельское шоссе, 41
+						</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн - пт: 10:00 -19:00</span>
+							<span class="address-table__time">сб - вс: 11:00 -17:00</span>
+						</div>
+					</div>
+					
+					<div class="address-table__title address-table__title_xs-none">
+						Архангельская область
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Магазин в п. Березник</div>
+						<div class="address-table__col">ул. П. Виноградова, 211</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Магазин в г. Вельск</div>
+						<div class="address-table__col">ул. Гагарина, 40</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">Магазин в п. Октябрьский</div>
+						<div class="address-table__col">ул. Заводская, 5а</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в с. Верхняя Тойма
+						</div>
+						<div class="address-table__col">ул. Угрюмова, 6</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в г. Каргополь
+						</div>
+						<div class="address-table__col">ул. Дыбцына, 22</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в г. Котлас
+						</div>
+						<div class="address-table__col">ул. Володарского, 11</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в г. Няндома
+						</div>
+						<div class="address-table__col">ул. Первомайская, 31</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в г. Онега
+						</div>
+						<div class="address-table__col">ул. Победы, 6</div>
+						<div class="address-table__col">(81823)5-56-68</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+					<div class="address-table__row">
+						<div class="address-table__col">
+							Магазин в п. Плесецк
+						</div>
+						<div class="address-table__col">ул. Садовая, 33</div>
+						<div class="address-table__col">(8182)65-27-05</div>
+						<div class="address-table__col">
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+							<span class="address-table__time">пн. — пт.: 10:00 – 21:00</span>
+						</div>
+					</div>
+				</div><!-- address-table -->
+			</div><!-- content -->
+		</section><!-- page-container -->
+
+		<footer class="footer">
+			<div class="footer__top-line top-line">
+				<div class="footer__top-line-container">
+					<nav class="top-footer__nav">
+						<a href="#" class="top-footer__nav-link top-footer__nav-link_active">Главная</a>
+						<a href="#" class="top-footer__nav-link"><span class="footer__icon-percent"></span> Акции</a>
+						<a href="#" class="top-footer__nav-link">Оплата и доставка</a>
+						<a href="#" class="top-footer__nav-link">Адреса магазинов</a>
+						<a href="#" class="top-footer__nav-link">О компании</a>
+						<a href="#" class="top-footer__nav-link">Производители</a>
+						<a href="#" class="top-footer__nav-link">Сертификаты</a>
+						<a href="#" class="top-footer__nav-link">Контакты</a>
+					</nav>
+				</div><!-- container -->
+			</div><!-- top-header__top-line -->
+
+			<div class="footer__container clearfix">
+
+				<div class="footer__descr-mobile">
+					<a href="#"><img src="img/home/logo_white.png"></a>
+					<p>
+						Информация на сайте www.lesidom.ru не
+						является публичной офертой. Указанные цены
+						действуют только при оформлении заказа
+						через интернет-магазин www.lesidom.ru.
+					</p>
+				</div>
+				<a href="#" class="footer__logo"><img src="img/home/logo_green.png" alt=""></a>
+				<div class="footer__info">
+					<div class="footer__info-wrapper">
+						<a href="#" class="footer__info-link">Новости</a>		
+						<a href="#" class="footer__info-link">Вакансии</a>		
+					</div>	
+					<div class="footer__info-wrapper">
+						<a href="#" class="footer__info-link">Статьи и советы</a>
+						<a href="#" class="footer__info-link">Сервис</a>		
+					</div>	
+				</div><!-- footer__info -->
+				<div class="footer__social">
+					<div class="footer__social-title">ЧИТАЙТЕ НАС:</div>
+					<div class="footer__social-wrapper">
+						<a href="#" class="footer__social-link"> 
+							<span class="footer__social-link-icon footer__social-link-icon_vk"></span> 
+							вКонтакте
+						</a> 
+						<a href="#" class="footer__social-link"> 
+							<span class="footer__social-link-icon footer__social-link-icon_san"></span> 
+							Sanatatur
+						</a>
+					</div><!-- footer__social-wrapper -->
+				</div><!-- footer__social -->
+				<div class="footer__contact">
+					<a href="tel:+7 (8182) 65-27-05" class="footer__contact-phone">
+						<span class="footer__contact-phone-icon"></span>
+						+7 (8182) 65-27-05
+					</a>
+					<div class="footer__schedule">
+						<span class="footer__schedule-icon"></span>
+						Пн.-Пт: 9:00-18.00
+					</div>
+					<a href="#" class="footer__btn">обратная связь</a>
+				</div><!-- footer__contact -->
+				<p class="footer__descr">
+					Информация на сайте www.lesidom.ru не является публичной офертой. <br>
+					Указанные цены действуют только при оформлении заказа через интернет-магазин www.lesidom.ru.
+				</p>
+			</div><!-- footer__container -->
+			<div class="footer__copyright">
+				<p class="footer__copyright-text">
+					© 2013-2016 ООО «Архлес-сервис», <br> Магазины  «Лес и Дом», info@lesidom.ru
+				</p>
+				<span class="footer__author">Site by <br> <a href="http://www.leeft.ru/" target="_blank" class="footer__author-link">LEEFT</a></span>
+			</div>
+		</footer>
+	</div>
+
+
+	<div class="overley-page overley-page_blue"></div>
+
+	<!-- SCRIPTS -->
+	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
+	<script src="libs/owlcarousel2/js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
