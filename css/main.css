@@ -5578,4 +5578,13 @@ body,
 .tabs-item {
   display: inline-block;
   font-size: 13px;
+  width: 25%;
+}
+.tabs-link {
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+}
+.tabs .active {
+  background-color: #68ba65;
 }

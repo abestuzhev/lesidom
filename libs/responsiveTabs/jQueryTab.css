@@ -24,7 +24,7 @@ pre{ border: 1px solid #ddd; box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd; margin:
 /*  == tab heading */
 .tabs { border: 1px solid #ccc; overflow:hidden; }
 /*.tabs li{ float:left; }*/
-.tabs li a{ border-left: 1px solid #ccc; color:#21759B; display:block; font-weight:bold; padding: 15px 20px; }
+/*.tabs li a{ border-left: 1px solid #ccc; color:#21759B; display:block; font-weight:bold; padding: 15px 20px; }*/
 .tabs li:first-child a{ border-left: none; }
 .tabs li a:hover, .tabs li a:focus{ color:#D54E21; }
 .tabs .active a{ color: #000; }
