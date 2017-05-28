@@ -18,7 +18,6 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link href="libs/normalize/normalize.css" rel="stylesheet">
-	<link href="libs/responsiveTabs/jQueryTab.css" rel="stylesheet">
 	<link href="libs/animation.css" rel="stylesheet">
 	<link href="libs/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -626,31 +625,256 @@
 				<div class="page-title">Личный кабинет</div>
 
 				<div class="lk">
-					<div class="tabs-7">
-						<ul class="tabs">
-					        <li class="tabs-item"><a href="#tab-1" class="tabs-link">Личный кабинет</a></li>
-					        <li class="tabs-item"><a href="#tab-2" class="tabs-link">История заказов</a></li>
-					        <li class="tabs-item"><a href="#tab-3" class="tabs-link">Способ оплаты</a></li>
-					        <li class="tabs-item"><a href="#tab-4" class="tabs-link">Способ доставки</a></li>
-					    </ul>
-						<div class="tab_content_wrapper">
-					        <article class="tab_content" id="tab-1">
-					            <p>General calidis mundum caligine coeperunt. Descenderat regat prima dissaepserat humanas tonitrua orbem bracchia. Principio galeae sole. Margine postquam evolvit eodem auroram uno omni ille secrevit regat.<a href="#tab3">General</a> coeptis undae traxit certis secrevit campoque liquidum margine gravitate. Animus convexi origine terrae cesserunt. Tumescere natus proximus lacusque. Otia faecis tonitrua erat hominum aliis radiis moles.</p>
-					            <p>General conversa egens spectent tum sed diremit haec. Dei cinxit zephyro media congeriem septemque rudis. Terrae nubes utramque opifex diu magni reparabat meis nam. Turba habendum. Onus animal est pondere. Foret dedit obsistitur. Tenent homo caligine humanas sanctius dicere sive addidit. Ignea sibi. Aberant mundi iners dispositam altae orbis fronde iunctarum nubibus.</p>
-					        </article>
-					        <article class="tab_content" id="tab-2">
-					            <p>Social Media conversa egens spectent tum sed diremit haec. Dei cinxit zephyro media congeriem septemque rudis. Terrae nubes utramque opifex diu magni reparabat meis nam. Turba habendum. Onus animal est pondere. Foret dedit obsistitur. Tenent homo caligine humanas sanctius dicere sive addidit. Ignea sibi. Aberant mundi iners dispositam altae orbis fronde iunctarum nubibus. Ante parte. Quisquis tractu diu. Iudicis dominari frigida origo surgere fabricator. <a href="#tab4">Social media</a>  piscibus figuras speciem evolvit ulla obstabatque cuncta. Omni grandia terrenae pugnabant pondus quisque orbis ultima.</p>
-					            <p>Social Media calidis mundum caligine coeperunt. Descenderat regat prima dissaepserat humanas tonitrua orbem bracchia. Principio galeae sole. Margine postquam evolvit eodem auroram uno omni ille secrevit regat.Coeptis undae traxit certis secrevit campoque liquidum margine gravitate. Animus convexi origine terrae cesserunt. Tumescere natus proximus lacusque. Otia faecis tonitrua erat hominum aliis radiis moles.</p>
-					        </article>
-					        <article class="tab_content" id="tab-3">
-					            <p>Copyright eurus supplex undae fulgura congestaque locis. Gravitate ante nabataeaque sua naturae satus ad. <a href="#tab2">Copyright</a> madescit pugnabant effervescere abscidit altae. Parte norant principio vultus reparabat omni rapidisque.</p>
-					            <p>Copyright flamma erectos tempora sorbentur illas foret ambitae. Sata locavit triones. Terrarum tuti diversa formas diffundi prima quod regio premuntur. Ipsa pluviaque toto valles conversa quinta.</p>
-					        </article>
-					        <article class="tab_content" id="tab-4">
-					            <p>Contact erat pugnabant diffundi pondere temperiemque. Sole liquidas emicuit mundo pro secant. <a href="#tab1">Contact</a> aer nuper habentem tum in. Secant origine inposuit diverso zonae nubes nulli mundum sectamque.</p>
-					            <p>Contact animalibus circumfluus ignea fert. Undas instabilis coercuit porrexerat. Uno legebantur plagae coeptis. Tanta opifex margine locis omnia obsistitur dispositam sublime erant. Fixo ubi mutatas tuba.</p>
-					        </article>
-					    </div>
+
+					<ul class="tabs">
+					  <li class="active" rel="tab1"><span>Личный кабинет</span></li>
+					  <li rel="tab2"><span>История заказов</span></li>
+					  <li rel="tab3"><span>Способ оплаты</span></li>
+					  <li rel="tab4"><span>Способ доставки</span></li>
+					</ul>
+					<div class="tab_container">
+						<h3 class="tab-accordion_heading" rel="tab1">Личный кабинет</h3>
+						<div id="tab1" class="tab_content">
+							<div class="tab_content-row">
+								<div class="tab_content-col">
+									<label for="" class="form__label">Имя:
+										<input type="text" class="form__input">
+									</label>
+									<label for="" class="form__label">Фамилия
+										<input type="text" class="form__input">
+									</label>
+
+								</div>
+								<div class="tab_content-col">
+									<label for="" class="form__label">Email:
+										<input type="text" class="form__input">
+									</label>
+									<label for="" class="form__label">Телефон:
+										<input type="text" class="form__input">
+									</label>
+								</div>
+							</div>
+							<div class="tab_content-row">
+								<div class="tab_content-col">
+									<label for="" class="form__label">Пароль:
+										<input type="text" class="form__input">
+									</label>
+
+								</div>
+								<div class="tab_content-col">
+									<label for="" class="form__label">Повторите пароль:
+										<input type="text" class="form__input">
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- #tab1 -->
+						<h3 class="tab-accordion_heading" rel="tab2">История заказов</h3>
+						<div id="tab2" class="tab_content">
+							<div class="basket-product">
+								<div class="basket-product__row basket-product__row-head">
+									<div class="basket-product__item">№</div>
+									<div class="basket-product__item">Фото</div>
+									<div class="basket-product__item">Наименование</div>
+									<div class="basket-product__item">Цена, руб.</div>
+									<div class="basket-product__item">Количество, шт.</div>
+									<div class="basket-product__item">Сумма, руб.</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-del"></span>
+									</div>
+								</div>
+								<div class="basket-product__row">
+									<div class="basket-product__item">#1</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Мотокультиватор НЕВА МК-80 <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">100 000</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="1"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">100 000</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__row">
+									<div class="basket-product__item">#2</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Мотокультиватор Нева МК-200-Б (Series 750) <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="2"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">5 000</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__row">
+									<div class="basket-product__item">#3</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Культиватор бензиновый Нева МК-200-С6,0 с <br>
+										двигателем Subaru EX17 <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">1 200</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="1"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">1 200</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__row">
+									<div class="basket-product__item">#4</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Мотокультиватор Нева МК-200-Б (Series 750) <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="4"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">10 000</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__row">
+									<div class="basket-product__item">#5</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Мотокультиватор НЕВА МК-80 <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="1"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__row">
+									<div class="basket-product__item">#6</div>
+									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
+									<div class="basket-product__item">
+										Культиватор бензиновый Нева, двигатель Subaru <br>
+										<span class="basket-product__item_grey">Код: 112768</span>
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<div class="quantity">
+											<span class="quantity__minus arrow arrow_left"></span>
+											<input type="text" class="quantity__input" value="1"/>
+											<span class="quantity__plus arrow"></span>
+										</div><!-- quantity -->
+									</div>
+									<div class="basket-product__item">2 500</div>
+									<div class="basket-product__item">
+										<span class="basket__icon-close cross"></span>
+									</div>
+								</div><!-- basket-product__row -->
+								<div class="basket-product__total">
+									<div class="basket-product__total-info">
+										Количество:
+										<span class="basket-product__total-info basket-product__total-info_bold">
+											10
+										</span>
+									</div>
+									<div class="basket-product__total-info">
+										Итого:
+										<span class="basket-product__total-info basket-product__total-info_bold">
+											121 200 <span class="icon-rub"></span>
+										</span>
+									</div>
+								</div><!-- basket-product__total -->
+							</div><!-- basket-product -->
+						</div>
+						<!-- #tab2 -->
+						<h3 class="tab-accordion_heading" rel="tab3">Способ оплаты</h3>
+						<div id="tab3" class="tab_content">
+							<div class="basket-payment">
+								<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
+								<label for="self-service" class="default-checkbox-label"><span></span>Самовывоз из магазина</label>
+								<input type="checkbox" id="pod" name="pod" class="default-checkbox"/>
+								<label for="pod" class="default-checkbox-label"><span></span>Наложенный платеж</label>
+								<input type="checkbox" id="cash" name="cash" class="default-checkbox"/>
+								<label for="cash" class="default-checkbox-label"><span></span>Оплата наличными при получении в точке выдачи</label>
+								<a href="#" class="btn basket-payment__btn">завершить покупку <span class="arrow"></span></a>
+							</div><!-- basket-payment -->
+						</div>
+						<!-- #tab3 -->
+						<h3 class="tab-accordion_heading" rel="tab4">Способ доставки</h3>
+						<div id="tab4" class="tab_content">
+							<div class="basket-receipt">
+								<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
+								<label for="self-service" class="default-checkbox-label default-checkbox-label_bold"><span></span>Самовывоз из магазина</label>
+
+								<div class="basket-receipt__select-wrapper">
+									<p class="basket-receipt__select-title">Выберите город:</p>
+									<select class="basket-receipt__select">
+										<option value="">Архангельск</option>
+										<option value="">Архангельск</option>
+										<option value="">Архангельск</option>
+									</select>
+								</div><!-- basket-receipt__select-wrapper -->
+								<div class="basket-receipt__select-wrapper">
+									<p class="basket-receipt__select-title basket-receipt__select-title_mt">Выберите магазин:</p>
+									<select class="basket-receipt__select basket-receipt__select_mb">
+										<option value="">пр. Московский, 25, ТД “Московский”</option>
+										<option value="">пр. Московский, 25, ТД “Московский”</option>
+										<option value="">пр. Московский, 25, ТД “Московский”</option>
+									</select>
+								</div><!-- basket-receipt__select-wrapper -->
+								<input type="checkbox" id="post" name="self-service" class="default-checkbox"/>
+								<label for="post" class="default-checkbox-label default-checkbox-label_bold"><span></span>Доставка Почтой России до почтового отделения</label>
+								<div class="basket-details__address-wrapper">
+									<p class="basket-details__address-title">Адрес доставки:</p>
+									<label class="form__label basket-details__address-input">
+										<input type="text" class="form__input" placeholder="Город">
+									</label>
+									<label class="form__label basket-details__address-input">
+										<input type="text" class="form__input" placeholder="Улица">
+									</label>
+									<label class="form__label basket-details__address-input">
+										<input type="text" class="form__input" placeholder="Дом">
+									</label>
+									<label class="form__label basket-details__address-input">
+										<input type="text" class="form__input" placeholder="Квартира">
+									</label>
+								</div>
+							</div><!-- basket-receipt -->
+						</div>
 					</div>
 
 				</div>
@@ -743,7 +967,6 @@
 	<!-- SCRIPTS -->
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!--<script src="libs/jquery/jquery-3.1.1.min.js"></script>-->
-	<script src="libs/responsiveTabs/jQueryTab.js"></script>
 	<script src="libs/owlcarousel2/js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 

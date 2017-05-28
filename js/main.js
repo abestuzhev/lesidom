@@ -168,7 +168,7 @@ $(".obtainment__tab-caption").click(function() {
 
 
 //vacancy page
-$(".job__head-toggle").click(function () {
+$(".btn__head-toggle").click(function () {
 	$(this).parent().parent().find(".job__body-hidden").toggle();
 });
 
@@ -189,15 +189,45 @@ $(".personal__tab-caption").click(function() {
 }).eq(0).addClass("personal__tab-caption_active");
 //
 
-    $('.tabs-7').jQueryTab({
-        initialTab: 1,
-        tabInTransition: 'fadeIn',
-        tabOutTransition: 'fadeOut',
-        cookieName: 'active-tab-7'
 
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+    $("ul.tabs li").click(function() {
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#"+activeTab).fadeIn();
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+        $(".tab-accordion_heading").removeClass("d_active");
+        $(".tab-accordion_heading[rel^='"+activeTab+"']").addClass("d_active");
     });
 
 
+    $(".tab-accordion_heading").click(function() {
+        $(this).siblings('.tab-accordion_heading').removeClass('tab-accordion_active');
+        $(this).addClass('tab-accordion_active');
+        $(".tab_content").hide();
+        var d_activeTab = $(this).attr("rel");
+        $("#"+d_activeTab).fadeIn();
+
+        $(".tab-accordion_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+
+        if ( $( this ).hasClass( "d_active" ) ) {
+            $(this).removeClass("d_active");
+            $("#"+d_activeTab).fadeIn();
+        }
+    });
+
+	//показать/скрыть блок
+    $('.js-btn-show').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('faq_active');
+        $(this).parents(".faq_item").find(".faq_answer").slideToggle();
+    });
 });
 
 
