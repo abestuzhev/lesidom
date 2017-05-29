@@ -228,6 +228,25 @@ $(".personal__tab-caption").click(function() {
         $(this).toggleClass('faq_active');
         $(this).parents(".faq_item").find(".faq_answer").slideToggle();
     });
+
+    /*закрыть popup*/
+    $(".c-popup_close").click(function(event) {
+        event.preventDefault();
+        $(this).parent('.c-popup').toggleClass('c-popup_show');
+        $('.c-popup_bg').toggleClass('is-visible');
+        $(this).parents('.c-popup_container').toggleClass('c-popup_show');
+        $('body').toggleClass('body-popup');
+    });
+
+    $(".top-header__login").click(function(event) {
+        console.log("ghbdtn");
+        event.preventDefault();
+        $(".c-popup_entity").toggleClass('c-popup_show');
+        $('.c-popup_bg').toggleClass('is-visible');
+        $(".c-popup_entity").parents('.c-popup_container').toggleClass('c-popup_show');
+        $('body').toggleClass('body-popup');
+    });
+
 });
 
 
