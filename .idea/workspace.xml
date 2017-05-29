@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22c94773-1d4d-4290-857c-55f55e42dffe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/main.less" afterPath="$PROJECT_DIR$/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products_level2.html" afterPath="$PROJECT_DIR$/products_level2.html" />
-    </list>
+    <list default="true" id="22c94773-1d4d-4290-857c-55f55e42dffe" name="Default" comment="" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,7 +108,7 @@
             <entry file="file://$PROJECT_DIR$/products_level2.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="413">
-                  <caret line="957" column="28" selection-start-line="957" selection-start-column="28" selection-end-line="957" selection-end-column="28" />
+                  <caret line="957" column="0" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -419,12 +412,12 @@
       <workItem from="1495432499894" duration="1294000" />
       <workItem from="1495972299736" duration="7820000" />
       <workItem from="1495986092627" duration="3451000" />
-      <workItem from="1496061530139" duration="2532000" />
+      <workItem from="1496061530139" duration="3128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27980000" />
+    <option name="totallyTimeSpent" value="28576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,7 +842,7 @@
     <entry file="file://$PROJECT_DIR$/products_level2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="957" column="28" selection-start-line="957" selection-start-column="28" selection-end-line="957" selection-end-column="28" />
+          <caret line="957" column="0" selection-start-line="957" selection-start-column="0" selection-end-line="957" selection-end-column="0" />
           <folding />
         </state>
       </provider>
