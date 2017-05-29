@@ -19,6 +19,7 @@
 
 	<link href="libs/normalize/normalize.css" rel="stylesheet">
 	<link href="libs/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="dns-main.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
@@ -955,7 +956,15 @@
                             <span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
                         </div>
                         <div class="filter_body">
-
+							<div class="filter-interval" data-box="interval">
+								<div class="range-controls">
+									<input type="text" id="price_from" class="slider_opt_txtbox form-control" data-id="price_from" data-name="min" data-type="from" placeholder="1990">			<span>—</span>
+									<input type="text" id="price_to" class="slider_opt_txtbox form-control" data-id="price_to" data-name="max" data-type="to" placeholder="71499">		</div>
+								<div class="interval-slider-box">
+									<div class="ui-slider-fake-container"></div>
+									<div id="filter_price_slider" class="slider_opt ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-draggable" data-min="1990" data-max="71499" data-value_from="1990" data-value_to="71499" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17.264%; width: 74.8105%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 17.264%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 92.0744%;"></a></div>
+								</div>
+							</div>
                         </div>
                     </div>
 					<div class="filter_item">

@@ -1131,81 +1131,117 @@
 	<div class="overley-page overley-page_blue"></div>
 
 
-	<div class="c-popup_container">
+	<div class="c-popup_container c-popup__auth">
 		<table class="c-popup_container-2">
 			<tr>
 				<td class="c-popup_container-3">
 					<!--new pop-up-->
-					<div class="c-popup c-popup_entity">
-						<div class="c-popup_close"><div></div><div></div></div>	<!--закрыть окно-->
-						<div class="c-popup_header">
-							<a href="#" class="c-popup_header-link">Вход</a>
-							<a href="#" class="c-popup_header-link">Регистрация юридических лиц</a>
-						</div><!--end c-popup_header-->
-						<form action="#" class="c-form">
+					<div class="c-popup">
+						<div class="c-popup__left">
+							<ul class="c-popup__nav">
+								<li class="c-popup__nav-item"><a href="#" class="c-popup__nav-link">Авторизация</a></li>
+								<li class="c-popup__nav-item"><a href="#" class="c-popup__nav-link">Регистрация</a></li>
+							</ul>
+						</div>
+						<div class="c-popup__right" style="display: none;">
+							<div class="c-popup_close"></div>	<!--закрыть окно-->
+							<div class="c-popup_header">
+								<div class="c-popup_header-title">Авторизация</div>
+							</div><!--end c-popup_header-->
 							<div class="c-popup_body">
-								<div class="c-popup_body-title">Регистрация покупателя</div>
-								<div class="c-form_item">
-									<label for="entity_name">Ф.И.О.:<span>*</span></label>
-									<input type="text" id="entity_name" placeholder="Иванов Иван Иванович" autofocus required>
-								</div>
-								<div class="c-form_item">
-									<label for="entity_company">Название компании (как в уставных документах):<span>*</span></label>
-									<input type="text" id="entity_company" placeholder="ООО Название компании" autofocus required>
-								</div>
-								<div class="c-popup_row">
-									<div class="c-popup_col c-popup_col-6">
-										<div class="c-form_item">
-											<label for="entity_email">Эл. почта:<span>*</span></label>
-											<input type="text" id="entity_email" autofocus required>
-										</div>
-									</div>
-									<div class="c-popup_col c-popup_col-6">
-										<div class="c-form_item">
-											<label for="entity_phone">Телефон:<span>*</span></label>
-											<input type="text" id="entity_phone" placeholder="Тел: +7(___)___-__-__" class="phone-mask" autofocus required>
-										</div>
-									</div>
-								</div>
-								<div class="c-form_item">
-									<input type="checkbox" id="entity_confirmation-stock" checked>
-									<label for="entity_confirmation-stock">Подтверждаю свое согласие на получение выгодных предложений на покупки
-										продуктов.</label>
-								</div>
-								<div class="c-form_item">
-									<input type="checkbox" id="entity_confirmation-data">
-									<label for="entity_confirmation-data">Подтверждаю свое согласие на обработку и хранение моих персональных данных всоответствии с
-										<a href="#">пользовательским соглашением</a></label>
-								</div>
-								<div class="c-form_item">
-									<input type="checkbox" id="entity_confirmation-pact">
-									<label for="entity_confirmation-pact">Я подтверждаю, что ознакомился с <a href="#">договором оферты</a>	и принимаю условия, описанные в нем.</label>
-								</div>
-							</div><!--end c-popup_body-->
-							<div class="c-popup_footer">
-								<div class="c-popup_questionnaire">
-									<div class="c-popup_questionnaire-title">Как вам удобно заполнить информацию о вашей компании?</div>
-									<div class="c-form_item">
-										<input type="radio" name="entity-info" id="entity_callback" checked>
-										<label for="entity_callback">Заказать обратный звонок</label>
-									</div>
-									<div class="c-form_item">
-										<input type="radio" name="entity-info" id="entity_file" checked>
-										<label for="entity_file">Отправить реквизиты в файле (doc, pdf)</label>
-										<input class="is-hidden" type="file" name="file" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-									</div>
-									<div class="c-form_item">
-										<input type="radio" name="entity-info" id="entity_yourself" checked>
-										<label for="entity_yourself">Заполнить самостоятельно на сайте</label>
-									</div>
-									<div class="c-form_item">
-										<img src="images/recaptcha.jpg" alt="">
-									</div>
-									<button class="c-form_button" disabled>Загрузить и зарегистрироваться</button>
-								</div>
+								<form action="#">
+									<label for="" class="form__label">Имя:
+										<input type="text" class="form__input">
+									</label>
+									<label for="" class="form__label">Фамилия
+										<input type="text" class="form__input">
+									</label>
+									<input type="checkbox" id="save_password" name="save_password" class="default-checkbox"/>
+									<label for="save_password" class="default-checkbox-label form-login__checkbox-label"><span></span>Запомнить пароль</label>
+									<a href="#" class="form__forgot-password form-login__forgot-password">Забыли пароль?</a>
+									<button class="btn form__btn">войти</button>
+
+								</form>
 							</div>
-						</form><!--end form-->
-						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+						</div>
+						<div class="c-popup__right" style="">
+							<div class="c-popup_close"></div>	<!--закрыть окно-->
+							<div class="c-popup_header">
+								<div class="c-popup_header-title">Регистрация</div>
+							</div><!--end c-popup_header-->
+							<div class="c-popup_body">
+								<form action="#">
+									<label for="" class="form__label">Ваше имя:
+										<input type="text" class="form__input">
+									</label>
+									<label for="" class="form__label">Ваш e-mail:
+										<input type="text" class="form__input">
+									</label>
+									<label for="" class="form__label">Ваш номер телефона:
+										<input type="password" class="form__input" placeholder="х (ххх) хххххх">
+									</label>
+									<label for="" class="form__label form__label_sm">Ваш пароль:
+										<input type="password" class="form__input">
+									</label>
+									<label for="" class="form__label form__label_sm">Подтвердите пароль:
+										<input type="password" class="form__input">
+									</label>
+									<p class="form__text form-registration__text">
+										Пароль должен содержать минимум 6 символов,
+										включающих цифры и/или латинские буквы
+									</p>
+									<input type="checkbox" id="agreement" name="agreement" class="default-checkbox"/>
+									<label for="agreement" class="default-checkbox-label form-registration__checkbox-label"><span></span>
+									</label>
+
+									<p class="form-registration__agreement-text">
+										Настоящим подтверждаю, что я ознакомлен и
+										согласен с условиями политики
+										конфиденциальности.
+									</p>
+									<button class="btn form__btn">Зарегистрироваться</button>
+
+								</form>
+							</div>
+						</div>
+						<div class="c-popup__footer">
+							<div class="product-info__message">
+								<span class="product-info__message-icon"></span>
+								<p class="product-info__message-text">Ещё не зарегистрировались? Делайте покупки проще и быстрее! <a href="#">Присоединяйтесь!</a></p>
+							</div>
+						</div>
+
+					</div><!--end popup-->
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="c-popup_container c-popup__reg">
+		<table class="c-popup_container-2">
+			<tr>
+				<td class="c-popup_container-3">
+					<!--new pop-up-->
+					<div class="c-popup">
+						<div class="c-popup_close"></div>	<!--закрыть окно-->
+						<div class="c-popup_header">
+							<div class="c-popup_header-title">Вход</div>
+						</div><!--end c-popup_header-->
+						<div class="c-popup_body">
+							<form action="#">
+								<label for="" class="form__label">Имя:
+									<input type="text" class="form__input">
+								</label>
+								<label for="" class="form__label">Фамилия
+									<input type="text" class="form__input">
+								</label>
+								<label for="" class="form__label">Комментарий к заказу:
+									<textarea class="form__textarea" rows="6"></textarea>
+								</label>
+
+								<button class="btn">Отправить</button>
+							</form>
+						</div>
 					</div><!--end popup-->
 				</td>
 			</tr>

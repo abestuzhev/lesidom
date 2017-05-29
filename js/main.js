@@ -239,11 +239,18 @@ $(".personal__tab-caption").click(function() {
     });
 
     $(".top-header__login").click(function(event) {
-        console.log("ghbdtn");
         event.preventDefault();
-        $(".c-popup_entity").toggleClass('c-popup_show');
+        $(".c-popup__auth").toggleClass('c-popup_show');
         $('.c-popup_bg').toggleClass('is-visible');
-        $(".c-popup_entity").parents('.c-popup_container').toggleClass('c-popup_show');
+        // $(".c-popup_entity").parents('.c-popup_container').toggleClass('c-popup_show');
+        $('body').toggleClass('body-popup');
+    });
+
+    $(".top-header__reg").click(function(event) {
+        event.preventDefault();
+        $(".c-popup__reg").toggleClass('c-popup_show');
+        $('.c-popup_bg').toggleClass('is-visible');
+        // $(".c-popup_entity").parents('.c-popup_container').toggleClass('c-popup_show');
         $('body').toggleClass('body-popup');
     });
 
