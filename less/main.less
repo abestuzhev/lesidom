@@ -6297,8 +6297,8 @@ ul.tabs li.active::after {
 }
 #close-balloon {
   position: absolute;
-  top: -11px;
-  right: -9px;
+  top: 22px;
+  right: 18px;
   cursor: pointer;
 }
 /*.ymaps-image-with-content-content {*/
@@ -6307,27 +6307,54 @@ ul.tabs li.active::after {
 
 
 .popup-map_title {
-  text-align: left;
-  color: #8e1616;
-  border-bottom: 1px dotted #000;
-  font-style: italic;
-  line-height: 1.3;
+  color: #4A4A4A;
+  font-size: 18px;
   font-weight: 700;
-  font-size: 16px;
-  margin: 11px 18px 5px 55px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 20px 20px 28px 30px;
+  box-sizing: border-box;
 }
 
 .popup-map_text {
+  color: #4A4A4A;
+  font-size: 13px;
   font-weight: 400;
-  font-style: italic;
   text-align: left;
-  font-size: 16px;
-  color: #676767;
-  margin: 1px 18px 1px 55px;
-  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0 0 15px 30px;
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
+.popup-map_text-address::before {
+  content: '';
+  width: 14px;
+  height: 17px;
+  top: -2px;
+  background: url('../img/map/icon-adress.png') 0 0 no-repeat;
+}
 
+.popup-map_text-phone::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url('../img/map/icon-phone.png') 0 0 no-repeat;
+}
+
+.popup-map_text-time::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  top: 8px;
+  background: url('../img/map/icon-time.png') 0 0 no-repeat;
+}
 
 /*===============================================================
 ========================== filter ===================================
@@ -6352,8 +6379,72 @@ ul.tabs li.active::after {
   }
   &_body {
     margin-top: 14px;
+
+    &-col {
+      width: 49%;
+    }
   }
 }
+
+.vertical-filter {
+  width: 100%;
+  border: 1px solid #d1d2d2;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.vertical-filter_item {
+  display: inline-block;
+  padding: 12px 18px;
+  border-right: 1px solid #d1d2d2;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.vertical-filter_quantity {
+  display: inline-block;
+  color:#fff;
+  background-color: #cdd2d9;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 17px;
+  margin-right: 2px;
+
+  &--active {
+    background-color: #68ba65;
+  }
+}
+
+.vertical-filter_list,
+.vertical-filter_grid {
+  display: inline-block;
+  width: 23px;
+  height: 17px;
+  background-color: #eee;
+}
+.vertical-filter_list {
+  //background: url('../img/') 0 0 no-repeat;
+  margin-right: 2px;
+}
+.vertical-filter_list:hover {
+  width: 23px;
+  height: 17px;
+  background-position: -23px 0;
+}
+
+.vertical-filter_grid {
+  //background: url('../img/') 0 0 no-repeat;
+}
+.vertical-filter_list:hover {
+  width: 23px;
+  height: 17px;
+  background-position: -23px 0;
+}
+
 
 /*===============================================================
 ========================== popup ===================================
@@ -6691,6 +6782,93 @@ pop-up
 }
 
 
+//range slider
+/* Ширина слайдера */
+
+.range-slider {
+  padding-bottom: 8px;
+  input {
+    display: inline-block;
+    width: 37%;
+    vertical-align: middle;
+  }
+
+  label {
+    vertical-align: middle;
+  }
+}
+#slider {
+  width: 140px;
+  //margin: 10px;
+}
+
+.formCost {
+  margin-bottom: 20px;
+}
+/* Контейнер слайдера */
+.ui-slider {
+  position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 18px;   /* Задаем нужную ширину */
+  height: 18px;  /* и высоту */
+  //background: url(../img/slider.png) no-repeat; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #d1d2d2;
+  color: #d1d2d2;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid #d1d2d2;
+    outline: none;
+  }
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+  height: 3px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -7px;
+  margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 4px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+  background-color: #cdd2d9;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+  //border: 1px solid #D4D4D4;
+  background: #68ba65;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
 
 
 

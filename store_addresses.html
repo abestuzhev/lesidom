@@ -657,10 +657,10 @@
                       });
 
                       shop1 = new ymaps.Placemark([55.70572079444501,37.68940358465577], {
-                          name: 'ТЦ Автомобили',
-                          address: 'ул. Южнопортовая 22/1, 3 этаж пав. 318',
-                          mode: 'пн.-пт.: 9:00-20.00, сб.-вс.: 9:00-18:00',
-                          phoneNumber: '+7(916)500-44-42, +7(916)710-86-00'
+                          name: 'Березник',
+						  address: 'ул. П. Виноградова, 211',
+						  phoneNumber: '(8182)65-27-05',
+						  mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
                       }, {
                           // Изображение иконки метки
                           iconImageHref: 'img/map/icon-point.png',
@@ -669,13 +669,13 @@
                           // смещение картинки
                           iconImageOffset: [-18, -56],
                           // Размеры содержимого балуна
-                          balloonContentSize: [330, 127],
+                          balloonContentSize: [289, 193],
                           // Задаем макет балуна - пользовательская картинка с контентом
                           balloonLayout: "default#imageWithContent",
                           // Картинка балуна
                           balloonImageHref: 'img/map/baloon-bg.png',
                           // Смещение картинки балуна
-                          balloonImageOffset: [-28, -132],
+                          balloonImageOffset: [0, -70],
                           // Размеры картинки балуна
                           balloonImageSize: [289, 193],
                           // Балун не имеет тени
@@ -685,18 +685,18 @@
                       }),
 
                           shop2 = new ymaps.Placemark([55.733966095419056,37.62490019595958], {
-                              name: 'ТЦ Мотоциклы',
-                              address: 'ул. Южнопортовая 22/1, 3 этаж пав. 318',
-                              mode: 'пн.-пт.: 9:00-20.00, сб.-вс.: 9:00-18:00',
-                              phoneNumber: '+7(916)500-44-42, +7(916)710-86-00'
+                              name: 'Няндома',
+                              address: 'ул. Первомайская, 31',
+							  phoneNumber: '(81838)6-26-43',
+                              mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
                           }, {
                               iconImageHref: 'img/map/icon-point.png',
                               iconImageSize: [32, 42],
                               iconImageOffset: [-18, -56],
-                              balloonContentSize: [330, 127],
+                              balloonContentSize: [289, 193],
                               balloonLayout: "default#imageWithContent",
                               balloonImageHref: 'img/map//baloon-bg.png',
-                              balloonImageOffset: [-28, -132],
+                              balloonImageOffset: [0, -70],
                               balloonImageSize: [289, 193],
                               balloonShadow: false,
                               balloonAutoPan: false
@@ -715,9 +715,9 @@
                       // Создаем шаблон для отображения контента балуна
                       var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
                           '<div class="popup-map_title">$[properties.name]</div>'+
-                          '<div class="popup-map_text">$[properties.address]</div>'+
-                          '<div class="popup-map_text">$[properties.mode]</div>'+
-                          '<div class="popup-map_text">$[properties.phoneNumber]</div>'+
+                          '<div class="popup-map_text popup-map_text-address">$[properties.address]</div>'+
+                          '<div class="popup-map_text popup-map_text-phone">$[properties.phoneNumber]</div>'+
+                          '<div class="popup-map_text popup-map_text-time">$[properties.mode]</div>'+
                           '<img id="close-balloon" src="img/map/icon-close.png" onclick="myMap.balloon.close()">'
                       );
                       // Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#theaterlayout'.
