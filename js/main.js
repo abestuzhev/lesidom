@@ -254,6 +254,12 @@ $(".personal__tab-caption").click(function() {
         $('body').toggleClass('body-popup');
     });
 
+
+    $('.btn__head-toggle').on('click', function(){
+        $(this).toggleClass('btn__head-toggle--up');
+		$(this).parents().siblings('.js-show__body').slideToggle();
+	});
+
 });
 
 

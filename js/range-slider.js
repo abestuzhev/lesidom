@@ -2,48 +2,48 @@ $(document).ready(function(){
 
 
     /* слайдер цен */
-
-    $("#slider").slider({
+function rangeSlider(slide, minValue, maxValue, maxDefault){
+    $(slide).slider({
         min: 0,
-        max: 1000,
-        values: [0,1000],
+        max: maxDefault,
+        values: [0,maxDefault],
         range: true,
         stop: function(event, ui) {
-            $("input#minCost").val($("#slider").slider("values",0));
-            $("input#maxCost").val($("#slider").slider("values",1));
+            $(minValue).val($(slide).slider("values",0));
+            $(maxValue).val($(slide).slider("values",1));
 
         },
         slide: function(event, ui){
-            $("input#minCost").val($("#slider").slider("values",0));
-            $("input#maxCost").val($("#slider").slider("values",1));
+            $( minValue).val($(slide).slider("values",0));
+            $(maxValue).val($(slide).slider("values",1));
         }
     });
 
     $("input#minCost").change(function(){
 
-        var value1=$("input#minCost").val();
-        var value2=$("input#maxCost").val();
+        var value1=$(minValue).val();
+        var value2=$(maxValue).val();
 
         if(parseInt(value1) > parseInt(value2)){
             value1 = value2;
-            $("input#minCost").val(value1);
+            $(minValue).val(value1);
         }
-        $("#slider").slider("values",0,value1);
+        $(slide).slider("values",0,value1);
     });
 
 
-    $("input#maxCost").change(function(){
+    $(maxValue).change(function(){
 
-        var value1=$("input#minCost").val();
-        var value2=$("input#maxCost").val();
+        var value1=$(minValue).val();
+        var value2=$(maxValue).val();
 
-        if (value2 > 1000) { value2 = 1000; $("input#maxCost").val(1000)}
+        if (value2 > maxDefault) { value2 = maxDefault; $(maxValue).val(maxDefault)}
 
         if(parseInt(value1) > parseInt(value2)){
             value2 = value1;
-            $("input#maxCost").val(value2);
+            $(maxValue).val(value2);
         }
-        $("#slider").slider("values",1,value2);
+        $(slide).slider("values",1,value2);
     });
 
 
@@ -62,7 +62,10 @@ $(document).ready(function(){
         if(!/\d/.test(keyChar))	return false;
 
     });
+}
 
+    rangeSlider('#slider-price', '#minCost-price', '#maxCost-price', 9999);
+    rangeSlider('#slider-power', '#minCost-power', '#maxCost-power', 10);
 
 });
 

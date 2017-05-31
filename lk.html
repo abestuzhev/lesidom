@@ -654,6 +654,7 @@
 									</label>
 								</div>
 							</div>
+							<div class="tab_content-row text-right"><a href="#" class="btn lk__btn"><img src="img/icon-save.png" alt="">Сохранить изменения</a></div>
 							<div class="tab_content-row">
 								<div class="tab_content-col">
 									<label for="" class="form__label">Пароль:
@@ -667,170 +668,171 @@
 									</label>
 								</div>
 							</div>
+							<div class="tab_content-row text-right"><a href="#" class="btn lk__btn"><img src="img/icon-save.png" alt="">Изменить пароль</a></div>
+
 						</div>
 						<!-- #tab1 -->
 						<h3 class="tab-accordion_heading" rel="tab2">История заказов</h3>
 						<div id="tab2" class="tab_content">
-							<div class="basket-product">
-								<div class="basket-product__row basket-product__row-head">
-									<div class="basket-product__item">№</div>
-									<div class="basket-product__item">Фото</div>
-									<div class="basket-product__item">Наименование</div>
-									<div class="basket-product__item">Цена, руб.</div>
-									<div class="basket-product__item">Количество, шт.</div>
-									<div class="basket-product__item">Сумма, руб.</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-del"></span>
+
+							<div class="lk-product_mobile">
+								<div class="lk-product__row lk-product__row-head">
+									<div class="lk-product__item text-left">Заказ: <span>44588</span></div>
+									<div class="lk-product__item text-right">от <span>21.01.2017</span></div>
+								</div>
+								<div class="lk-product__row">
+									<div class="lk-product__item text-left">Статус заказа</div>
+									<div class="lk-product__item text-right">Заказ в обработке</div>
+								</div>
+								<div class="lk-product__row">
+									<div class="lk-product__item text-left">Статус оплаты</div>
+									<div class="lk-product__item text-right">Не оплачен</div>
+								</div>
+								<div class="lk-product__row">
+									<div class="lk-product__item text-left">Сумма, руб.</div>
+									<div class="lk-product__item text-right">9999 руб.</div>
+								</div>
+								<div class="lk-product__row">
+									<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
+								</div>
+								<div class="lk-product__body js-show__body" style="display: none;">
+										<div class="lk-product__table">
+											<div class="lk-product__table-title">Состав заказа:</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#2</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#1</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#1</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row text-right">
+												<div class="lk-product__table-total">Итого: <span>23140</span></div>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="lk-product">
+								<div class="lk-product__row lk-product__row-head">
+									<div class="lk-product__item">№</div>
+									<div class="lk-product__item">Заказ</div>
+									<div class="lk-product__item">Дата</div>
+									<div class="lk-product__item">Статус заказа</div>
+									<div class="lk-product__item">Статус оплаты</div>
+									<div class="lk-product__item">Сумма, руб.</div>
+									<div class="lk-product__item">
+
 									</div>
 								</div>
-								<div class="basket-product__row">
-									<div class="basket-product__item">#1</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Мотокультиватор НЕВА МК-80 <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
+								<div class="lk-product__row">
+									<div class="lk-product__item">#1</div>
+									<div class="lk-product__item">
+										<span>44588</span>
+
+										<div class="lk-product__item-body"></div>
 									</div>
-									<div class="basket-product__item">100 000</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="1"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
+									<div class="lk-product__item">
+										<span>21.01.2017</span>
 									</div>
-									<div class="basket-product__item">100 000</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
+									<div class="lk-product__item"><span>Заказ в обработке</span></div>
+									<div class="lk-product__item"><span>Не оплачен</span></div>
+									<div class="lk-product__item"><span>9560</span></div>
+									<div class="lk-product__item">
+										<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 									</div>
-								</div><!-- basket-product__row -->
-								<div class="basket-product__row">
-									<div class="basket-product__item">#2</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Мотокультиватор Нева МК-200-Б (Series 750) <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="2"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
-									</div>
-									<div class="basket-product__item">5 000</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
+									<div class="lk-product__body js-show__body" style="display: none;">
+										<div class="lk-product__table">
+											<div class="lk-product__table-title">Состав заказа:</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#1</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row text-right">
+												<div class="lk-product__table-total">Итого: <span>23140</span></div>
+											</div>
+										</div>
 									</div>
 								</div><!-- basket-product__row -->
-								<div class="basket-product__row">
-									<div class="basket-product__item">#3</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Культиватор бензиновый Нева МК-200-С6,0 с <br>
-										двигателем Subaru EX17 <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
+								<div class="lk-product__row">
+									<div class="lk-product__item">#1</div>
+									<div class="lk-product__item">
+										<span>44588</span>
+
+										<div class="lk-product__item-body"></div>
 									</div>
-									<div class="basket-product__item">1 200</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="1"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
+									<div class="lk-product__item">
+										<span>21.01.2017</span>
 									</div>
-									<div class="basket-product__item">1 200</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
+									<div class="lk-product__item"><span>Заказ в обработке</span></div>
+									<div class="lk-product__item"><span>Не оплачен</span></div>
+									<div class="lk-product__item"><span>9560</span></div>
+									<div class="lk-product__item">
+										<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 									</div>
-								</div><!-- basket-product__row -->
-								<div class="basket-product__row">
-									<div class="basket-product__item">#4</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Мотокультиватор Нева МК-200-Б (Series 750) <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="4"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
-									</div>
-									<div class="basket-product__item">10 000</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
-									</div>
-								</div><!-- basket-product__row -->
-								<div class="basket-product__row">
-									<div class="basket-product__item">#5</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Мотокультиватор НЕВА МК-80 <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="1"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
+									<div class="lk-product__body js-show__body" style="display: none;">
+										<div class="lk-product__table">
+											<div class="lk-product__table-title">Состав заказа:</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#2</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#1</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row">
+												<div class="lk-product__table-col lk-product__table-number">#1</div>
+												<div class="lk-product__table-col lk-product__table-img"><img src="img/basket/basket-product.png" alt=""></div>
+												<div class="lk-product__table-col lk-product__table-name">Мотокультиватор НЕВА МК-80</div>
+												<div class="lk-product__table-col lk-product__table-quantity">2 шт.</div>
+												<div class="lk-product__table-col lk-product__table-price">2 500</div>
+											</div>
+											<div class="lk-product__table-row text-right">
+												<div class="lk-product__table-total">Итого: <span>23140</span></div>
+											</div>
+										</div>
 									</div>
 								</div><!-- basket-product__row -->
-								<div class="basket-product__row">
-									<div class="basket-product__item">#6</div>
-									<div class="basket-product__item"><img src="img/basket/basket-product.png" alt=""></div>
-									<div class="basket-product__item">
-										Культиватор бензиновый Нева, двигатель Subaru <br>
-										<span class="basket-product__item_grey">Код: 112768</span>
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<div class="quantity">
-											<span class="quantity__minus arrow arrow_left"></span>
-											<input type="text" class="quantity__input" value="1"/>
-											<span class="quantity__plus arrow"></span>
-										</div><!-- quantity -->
-									</div>
-									<div class="basket-product__item">2 500</div>
-									<div class="basket-product__item">
-										<span class="basket__icon-close cross"></span>
-									</div>
-								</div><!-- basket-product__row -->
-								<div class="basket-product__total">
-									<div class="basket-product__total-info">
-										Количество:
-										<span class="basket-product__total-info basket-product__total-info_bold">
-											10
-										</span>
-									</div>
-									<div class="basket-product__total-info">
-										Итого:
-										<span class="basket-product__total-info basket-product__total-info_bold">
-											121 200 <span class="icon-rub"></span>
-										</span>
-									</div>
-								</div><!-- basket-product__total -->
 							</div><!-- basket-product -->
 						</div>
 						<!-- #tab2 -->
 						<h3 class="tab-accordion_heading" rel="tab3">Способ оплаты</h3>
 						<div id="tab3" class="tab_content">
 							<div class="basket-payment">
-								<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
-								<label for="self-service" class="default-checkbox-label"><span></span>Самовывоз из магазина</label>
-								<input type="checkbox" id="pod" name="pod" class="default-checkbox"/>
-								<label for="pod" class="default-checkbox-label"><span></span>Наложенный платеж</label>
-								<input type="checkbox" id="cash" name="cash" class="default-checkbox"/>
-								<label for="cash" class="default-checkbox-label"><span></span>Оплата наличными при получении в точке выдачи</label>
-								<a href="#" class="btn basket-payment__btn">завершить покупку <span class="arrow"></span></a>
+								<div class="tab_content-row">
+									<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
+									<label for="self-service" class="default-checkbox-label"><span></span>Самовывоз из магазина</label>
+								</div>
+								<div class="tab_content-row"></div>
+									<input type="checkbox" id="pod" name="pod" class="default-checkbox"/>
+									<label for="pod" class="default-checkbox-label"><span></span>Наложенный платеж</label>
+								<div class="tab_content-row">
+									<input type="checkbox" id="cash" name="cash" class="default-checkbox"/>
+									<label for="cash" class="default-checkbox-label"><span></span>Оплата наличными при получении в точке выдачи</label>
+								</div>
+								<div class="tab_content-row text-right"><a href="#" class="btn lk__btn"><img src="img/icon-save.png" alt="">Сохранить изменения</a></div>
 							</div><!-- basket-payment -->
 						</div>
 						<!-- #tab3 -->
@@ -874,6 +876,7 @@
 									</label>
 								</div>
 							</div><!-- basket-receipt -->
+							<div class="tab_content-row text-right"><a href="#" class="btn lk__btn"><img src="img/icon-save.png" alt="">Сохранить изменения</a></div>
 						</div>
 					</div>
 

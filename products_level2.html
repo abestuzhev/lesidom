@@ -635,8 +635,23 @@
 
 			<div class="content">
 				<div class="vertical-filter">
-					<div class="vertical-filter_item"></div>
-					<div class="vertical-filter_item"></div>
+					<div class="vertical-filter_item">
+						<select name="" id="" class="form__select">
+							<option value="">Сортировать</option>
+							<option value="">По убыванию цены</option>
+							<option value="">По возрастанию цены</option>
+							<option value="">По алфавиту А—Я</option>
+							<option value="">По алфавиту Я—А</option>
+							<option value="">По рейтингу</option>
+							<option value="">Сначала новинки</option>
+						</select>
+					</div>
+					<div class="vertical-filter_item">
+						<select name="" id="" class="form__select">
+							<option value="">Все товары</option>
+							<option value="">В наличии</option>
+						</select>
+					</div>
 					<div class="vertical-filter_item">
 						<span>Кол-во:</span>
 						<a href="#" class="vertical-filter_quantity vertical-filter_quantity--active">15</a>
@@ -646,7 +661,7 @@
 					<div class="vertical-filter_item">
 						<span>Вид: </span>
 						<a href="#" class="vertical-filter_list"></a>
-						<a href="#" class="vertical-filter_grid"></a>
+						<a href="#" class="vertical-filter_grid vertical-filter_grid--active"></a>
 					</div>
 				</div>
 
@@ -970,16 +985,16 @@
                             <div class="filter_title">Цена</div>
                             <span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
                         </div>
-                        <div class="filter_body">
+                        <div class="filter_body js-show__body">
 							<div class="range-slider">
 								<div class="formCost">
-									<label for="minCost">от</label>
-									<input type="text" class="form__input" id="minCost" value="0"/>
-									<label for="maxCost">до</label>
-									<input type="text" class="form__input" id="maxCost" value="1000"/>
+									<label for="minCost-price">от</label>
+									<input type="text" class="form__input" id="minCost-price" value="0"/>
+									<label for="maxCost-price">до</label>
+									<input type="text" class="form__input" id="maxCost-price" value="99999"/>
 								</div>
 								<div class="sliderCont">
-									<div id="slider"></div>
+									<div class="range-slider_default" id="slider-price"></div>
 								</div>
 							</div>
 						</div>
@@ -989,18 +1004,19 @@
 							<div class="filter_title">Производитель</div>
 							<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 						</div>
-						<div class="filter_body">
+						<div class="filter_body js-show__body">
 							<div class="filter_body-row">
 								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
 								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>Champion</label>
 							</div>
-
+							<div class="filter_body-row">
 								<input type="checkbox" id="manufacturer-patriot" name="manufacturer-patriot" class="default-checkbox"/>
 								<label for="manufacturer-patriot" class="default-checkbox-label"><span></span>Patriot</label>
-
-
+							</div>
+							<div class="filter_body-row">
 								<input type="checkbox" id="manufacturer-neva" name="manufacturer-neva" class="default-checkbox"/>
 								<label for="manufacturer-neva" class="default-checkbox-label"><span></span>Нева</label>
+							</div>
 
 						</div>
 					</div>
@@ -1009,16 +1025,16 @@
 							<div class="filter_title">Мощность</div>
 							<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 						</div>
-						<div class="filter_body">
+						<div class="filter_body js-show__body"  style="display:none">
 							<div class="range-slider">
 								<div class="formCost">
-									<label for="minCost">от</label>
-									<input type="text" class="form__input" id="minCost" value="0"/>
-									<label for="maxCost">до</label>
-									<input type="text" class="form__input" id="maxCost" value="10"/>
+									<label for="minCost-power">от</label>
+									<input type="text" class="form__input" id="minCost-power" value="0"/>
+									<label for="maxCost-power">до</label>
+									<input type="text" class="form__input" id="maxCost-power" value="10"/>
 								</div>
 								<div class="sliderCont">
-									<div id="slider"></div>
+									<div class="range-slider_default" id="slider-power"></div>
 								</div>
 							</div>
 						</div>
@@ -1028,39 +1044,39 @@
 							<div class="filter_title">Тип двигателя</div>
 							<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 						</div>
-						<div class="filter_body">
-
-								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
-								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>Бензиновый</label>
-
-
-								<input type="checkbox" id="manufacturer-patriot" name="manufacturer-patriot" class="default-checkbox"/>
-								<label for="manufacturer-patriot" class="default-checkbox-label"><span></span>Дизельный</label>
-
-
-								<input type="checkbox" id="manufacturer-neva" name="manufacturer-neva" class="default-checkbox"/>
-								<label for="manufacturer-neva" class="default-checkbox-label"><span></span>Электрический</label>
-
+						<div class="filter_body js-show__body" style="display:none">
+							<div class="filter_body-row">
+								<input type="checkbox" id="Petrol" name="engine-type" class="default-checkbox"/>
+								<label for="Petrol" class="default-checkbox-label"><span></span>Бензиновый</label>
+							</div>
+							<div class="filter_body-row">
+								<input type="checkbox" id="Diesel" name="engine-type" class="default-checkbox"/>
+								<label for="Diesel" class="default-checkbox-label"><span></span>Дизельный</label>
+							</div>
+							<div class="filter_body-row">
+								<input type="checkbox" id="Electric" name="engine-type" class="default-checkbox"/>
+								<label for="Electric" class="default-checkbox-label"><span></span>Электрический</label>
+							</div>
 						</div>
 					</div>
 					<div class="filter_item">
 						<div class="filter_header">
-							<div class="filter_title">Тип двигателя</div>
+							<div class="filter_title">Скорость</div>
 							<span class="btn__head-toggle arrow btn__head-toggle-arrow"></span>
 						</div>
-						<div class="filter_body">
-
-								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
-								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>1+1</label>
-								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
-								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>1+2</label>
-
-
-								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
-								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>2+1</label>
-								<input type="checkbox" id="manufacturer-champion" name="manufacturer-champion" class="default-checkbox"/>
-								<label for="manufacturer-champion" class="default-checkbox-label"><span></span>2+2</label>
-
+						<div class="filter_body js-show__body" style="display:none">
+							<div class="filter_body-col">
+								<input type="checkbox" id="transfer-1-1" name="transfer" class="default-checkbox"/>
+								<label for="transfer-1-1" class="default-checkbox-label"><span></span>1+1</label>
+								<input type="checkbox" id="transfer-1-2" name="transfer" class="default-checkbox"/>
+								<label for="transfer-1-2" class="default-checkbox-label"><span></span>1+2</label>
+							</div>
+							<div class="filter_body-col">
+								<input type="checkbox" id="transfer-2-1" name="transfer" class="default-checkbox"/>
+								<label for="transfer-2-1" class="default-checkbox-label"><span></span>2+1</label>
+								<input type="checkbox" id="transfer-2-2" name="transfer" class="default-checkbox"/>
+								<label for="transfer-2-2" class="default-checkbox-label"><span></span>2+2</label>
+							</div>
 						</div>
 					</div>
 				</div>
