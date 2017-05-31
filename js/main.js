@@ -260,6 +260,12 @@ $(".personal__tab-caption").click(function() {
 		$(this).parents().siblings('.js-show__body').slideToggle();
 	});
 
+    $('.top-header__basket').on('click', function(){
+        $('.popup__basket').toggle();
+	});
+
+
+
 });
 
 

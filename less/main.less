@@ -618,6 +618,8 @@ body,
 .top-header__basket {
   display: inline-block;
   vertical-align: bottom;
+  cursor: pointer;
+  position: relative;
 }
 
 @media only screen and (max-width: 992px) {
@@ -4153,6 +4155,27 @@ body,
     @media only screen and (max-width: 992px) {width: 142px;}
     @media only screen and (max-width: 400px) {width: 100%;}
   }
+
+
+  &-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 16px;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 400;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 3px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      background: url('../img/icon-redact.png') 0 0 no-repeat;
+    }
+  }
 }
 
 .form__input {
@@ -4164,9 +4187,20 @@ body,
   padding-left: 10px;
   padding-right: 10px;
   border: 5px solid  #f2f5f8;
-  border-radius: @bdrs;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: inset 0px 0px 0px 1px #d1d2d2;
+
+  &:focus {
+    box-shadow: inset 0px 0px 0px 2px #68ba65;
+  }
+
+  &:focus ~ span.form__label-link {
+    color: #68ba65;
+  }
+  &:focus ~ span.form__label-link::after {
+    background-position: -10px 0;
+  }
 }
 
 .form__select {
@@ -6179,10 +6213,11 @@ ul.tabs li.active::after {
 .tab_content-col {
   width: 50%;
   float: left;
+  padding-right: 8px;
 }
 
 .tab_content-col:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .tab_content-title {
@@ -6341,7 +6376,6 @@ ul.tabs li.active::after {
 //таблица в личном кабинете
 .lk-product__row {
   border-bottom: 1px solid #d1d2d2;
-  //line-height: 58px;
   padding: 3px 0;
 
   &::after {
@@ -6404,7 +6438,7 @@ ul.tabs li.active::after {
   border-right: none;
 }
 
-  .lk-product__item:nth-child(2) {width: 197px;}
+
 
 
 .lk-product__item_grey {color: #b4b4b4;}
@@ -6521,7 +6555,7 @@ ul.tabs li.active::after {
   &-number {
     text-align: center;
     width: 6%;
-    @media screen and (max-width )
+
   }
 
   &-img {
@@ -6574,6 +6608,7 @@ ul.tabs li.active::after {
   }
 }
 
+
 @media screen and (max-width: 767px){
   .lk-product {
     display: none;
@@ -6583,6 +6618,19 @@ ul.tabs li.active::after {
   }
   .tab_content {
     padding: 10px 0;
+  }
+
+  .lk-product__table-number {width:7%;}
+  .lk-product__table-img {width:10%;}
+  .lk-product__table-name {width:49%;}
+  .lk-product__table- {width:10%;}
+  .lk-product__table-quantity {width:15%;}
+  .lk-product__table-price {width:15%;}
+}
+
+@media screen and (max-width: 480px){
+  .lk__btn {
+    width: 100%;
   }
 }
 
@@ -7178,6 +7226,97 @@ pop-up
 }
 
 
+//
+
+//попап корзины в шапке
+
+.popup__basket-small {
+  position: absolute;
+  top: 134%;
+  right: 0;
+  width: 350px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 16px 22px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.btn-popup__basket {
+  float: right;
+}
+
+.basket-small_table {
+  margin-bottom: 8px;
+}
+
+.basket-small__row {
+  border-bottom: 1px solid #d1d2d2;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.basket-small__row-head {
+  height: 30px;
+  padding: 0;
+  border-bottom: none;
+  border-radius: @bdrs;
+  line-height: 1;
+  color: #fff;
+  font-size: 12px;
+  background-color: #435158;
+  margin-bottom: 3px;
+}
+
+.basket-small__row-head .basket-small__item {
+  padding: 8px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  text-align: center;
+}
+
+.basket-small__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -4px;
+  padding: 1px 6px;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.basket-small__item:nth-child(1) {
+  width: 8%;
+  margin-left: 0;
+}
+
+.basket-small__item:nth-child(2) {width: 49%;}
+
+.basket-small__item:nth-child(3) {
+  width: 20%;
+}
+
+.basket-small__item:nth-child(4) {width: 23%;}
+
+
+.lk-product__price {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.lk-product__total {
+  float: right;
+  width: 309px;
+  height: 42px;
+  margin-top: 5px;
+  padding: 15px 30px;
+  border-radius: @bdrs;
+  background-color: #edeef0;
+}
 
 
 
