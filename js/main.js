@@ -261,11 +261,30 @@ $(".personal__tab-caption").click(function() {
 	});
 
     $('.top-header__basket').on('click', function(){
-        $('.popup__basket').toggle();
+        $(this).toggleClass('top-header__basket-show ');
 	});
 
+//comparison-slider
 
-
+    $("#comparison-slider").owlCarousel({
+        items:4,
+        loop:true,
+        smartSpeed:500,
+        autoHeight: true,
+        nav: true,
+        navText: ['<div class="top-product__arrow top-product__arrow_left"><span><</span></div>', '<div class="top-product__arrow top-product__arrow_right"><span>></span></div>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            600:{
+                items:3
+            }
+        }
+    });
 });
 
 
