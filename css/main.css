@@ -1957,6 +1957,25 @@ body,
   background-color: #fff;
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
 }
+.card-product__delete {
+  display: inline-block;
+  color: #4A4A4A;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 32px;
+  position: relative;
+  top: -3px;
+  cursor: pointer;
+}
+.card-product__delete::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url('../img/sprite.png') -79px 0 no-repeat;
+}
 @media only screen and (max-width: 600px) {
   .card-product {
     display: block;
@@ -6703,7 +6722,9 @@ pop-up
   text-transform: uppercase;
   background-color: #68ba65;
   margin-top: 15px;
-  margin-bottom: 30px;
+}
+.comparison .top-product__arrow {
+  top: -63px;
 }
 .comparison__body {
   padding: 25px 21px;
@@ -6721,11 +6742,7 @@ pop-up
 }
 .comparison__product {
   margin-left: 217px;
-  width: 100%;
-  max-width: 780px;
-}
-#comparison-slider .card-product {
-  margin-right: 2px;
+  width: 780px;
 }
 .characteristics {
   width: 200px;

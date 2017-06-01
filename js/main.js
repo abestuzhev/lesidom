@@ -266,8 +266,8 @@ $(".personal__tab-caption").click(function() {
 
 //comparison-slider
 
-    $("#comparison-slider").owlCarousel({
-        items:4,
+    var comparisonSlider = $("#comparison-slider").owlCarousel({
+        items:2,
         loop:true,
         smartSpeed:500,
         autoHeight: true,
@@ -285,6 +285,14 @@ $(".personal__tab-caption").click(function() {
             }
         }
     });
+
+//	удаление карточки в сравнении товара
+	$('.card-product__delete').on('click', function(){
+		// $(this).parents('.owl-item').hide();
+		counter--;
+		comparisonSlider.data('owlCarousel').removeItem(0);
+
+	})
 });
 
 
