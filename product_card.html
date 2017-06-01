@@ -684,7 +684,7 @@
 						</a>
 						<div class="goods__btn-wrapper">
 							<a href="#" class="goods__btn"><span class="card-product__btn-icon"></span> В КОРЗИНУ</a>
-							<a href="#" class="goods__btn-buy"><span class="goods__btn-icon-buy"></span> Купить в <span class="goods__btn-buy_bold">1 клик</span></a>
+							<a href="#" class="goods__btn-buy" id="popup__click"><span class="goods__btn-icon-buy"></span> Купить в <span class="goods__btn-buy_bold">1 клик</span></a>
 						</div>
 						<div class="goods__help">
 							<div class="goods__help-icon"></div>
@@ -1084,7 +1084,79 @@
 			</div>
 		</footer>
 	</div>
+	<div class="c-popup_container c-popup__click">
+		<table class="c-popup_container-2">
+			<tr>
+				<td class="c-popup_container-3">
+					<!--new pop-up-->
+					<div class="c-popup">
+						<div class="c-popup_close"></div>	<!--закрыть окно-->
+						<div class="c-popup_header">
+							<div class="c-popup_header-title"><span class="goods__btn-icon-buy"></span>Купить в один клик</div>
+						</div><!--end c-popup_header-->
+						<div class="c-popup_body">
+							<div class="basket-small_table">
+								<div class="basket-small__row basket-small__row-head">
+									<div class="basket-small__item">№</div>
+									<div class="basket-small__item">Товар</div>
+									<div class="basket-small__item">Кол-во</div>
+									<div class="basket-small__item">Цена,₽</div>
+								</div>
+								<div class="basket-small__row">
+									<div class="basket-small__item"><span>1</span></div>
+									<div class="basket-small__item"><span>Мотокультиватор НЕВА МК-80</span></div>
+									<div class="basket-small__item  text-center"><span>2</span></div>
+									<div class="basket-small__item  text-center"><span>9560</span></div>
+								</div><!-- basket-product__row -->
+								<div class="basket-small__row">
+									<div class="basket-small__item"><span>1</span></div>
+									<div class="basket-small__item"><span>Мотокультиватор НЕВА МК-80</span></div>
+									<div class="basket-small__item  text-center"><span>2</span></div>
+									<div class="basket-small__item  text-center"><span>9560</span></div>
+								</div><!-- basket-product__row -->
+								<div class="basket-small__row">
+									<div class="basket-small__item"><span>1</span></div>
+									<div class="basket-small__item"><span>Мотокультиватор НЕВА МК-80</span></div>
+									<div class="basket-small__item  text-center"><span>2</span></div>
+									<div class="basket-small__item  text-center"><span>9560</span></div>
+								</div><!-- basket-product__row -->
+								<div class="basket-small__row">
+									<div class="basket-small__total">
+										<span>Общая сумма: </span>
+										<span class="basket-small__total-price">77 900</span>
+									</div>
+								</div>
+							</div><!-- end product -->
+							<div class="product-info__message">
+								<span class="product-info__message-icon"></span>
+								<p class="product-info__message-text">Заполните данные и наш менеджер свяжится с вами в ближайшее время.</p>
+							</div>
+							<form action="#">
+								<label for="" class="form__label">Имя:
+									<input type="text" class="form__input">
+								</label>
+								<label for="" class="form__label">Фамилия
+									<input type="text" class="form__input">
+								</label>
+								<label for="" class="form__label">Номер телефона
+									<input type="text" class="form__input">
+								</label>
+								<input type="checkbox" id="agreement" name="agreement" class="default-checkbox" checked/>
+								<label for="agreement" class="default-checkbox-label form-registration__checkbox-label"><span></span></label>
 
+								<p class="form-registration__agreement-text"> Зарегистрироваться с этими данными на сайте для дальнейших покупок. </p>
+
+								<button class="btn">Отправить заказ</button>
+							</form>
+						</div>
+					</div><!--end popup-->
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!--задний фон модального окна-->
+	<div class="c-popup_bg"></div>
+	<!--END new pop-up-->
 
 	<!-- SCRIPTS -->
 	<script src="libs/jquery/jquery-3.1.1.min.js"></script>

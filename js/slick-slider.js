@@ -14,8 +14,8 @@ $('.goods__nav-slider').slick({
 	slidesToScroll: 1,
 	asNavFor: '.goods__slider',
 	focusOnSelect: true,
-	prevArrow: '<span class="goods__arrow goods__arrow-prev"><</span>',
-	nextArrow: '<span class="goods__arrow goods__arrow-next">></span>'
+	prevArrow: '<span class="goods__arrow goods__arrow-prev">❮</span>',
+	nextArrow: '<span class="goods__arrow goods__arrow-next">❯</span>'
 });
 
 });

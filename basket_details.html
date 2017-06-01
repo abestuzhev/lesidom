@@ -900,8 +900,8 @@
 				</div><!-- basket-step -->
 
 				<div class="basket-receipt">
-					<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
-					<label for="self-service" class="default-checkbox-label default-checkbox-label_bold"><span></span>Самовывоз из магазина</label>
+					<input type="radio" id="self-service" name="self-service" class="default-radio" checked/>
+					<label for="self-service" class="default-radio-label default-checkbox-label_bold"><span></span>Самовывоз из магазина</label>
 
 					<div class="basket-receipt__select-wrapper">
 						<p class="basket-receipt__select-title">Выберите город:</p>
@@ -919,8 +919,8 @@
 							<option value="">пр. Московский, 25, ТД “Московский”</option>
 						</select>
 					</div><!-- basket-receipt__select-wrapper -->
-					<input type="checkbox" id="post" name="self-service" class="default-checkbox"/>
-					<label for="post" class="default-checkbox-label default-checkbox-label_bold"><span></span>Доставка Почтой России до почтового отделения</label>
+					<input type="radio" id="post" name="self-service" class="default-radio"/>
+					<label for="post" class="default-radio-label default-radio-label_bold"><span></span>Доставка Почтой России до почтового отделения</label>
 					<div class="basket-details__address-wrapper">
 						<p class="basket-details__address-title">Адрес доставки:</p>
 						<label class="form__label basket-details__address-input">
@@ -946,12 +946,12 @@
 				</div><!-- basket-step -->
 
 				<div class="basket-payment">
-					<input type="checkbox" id="self-service" name="self-service" class="default-checkbox"/>
-					<label for="self-service" class="default-checkbox-label"><span></span>Самовывоз из магазина</label>
-					<input type="checkbox" id="pod" name="pod" class="default-checkbox"/>
-					<label for="pod" class="default-checkbox-label"><span></span>Наложенный платеж</label>
-					<input type="checkbox" id="cash" name="cash" class="default-checkbox"/>
-					<label for="cash" class="default-checkbox-label"><span></span>Оплата наличными при получении в точке выдачи</label>
+					<input type="radio" id="self-payment" name="basket-payment" class="default-radio" checked/>
+					<label for="self-payment" class="default-radio-label"><span></span>Квитанция Сбербанка</label>
+					<input type="radio" id="pod" name="basket-payment" class="default-radio"/>
+					<label for="pod" class="default-radio-label"><span></span>Наложенный платеж</label>
+					<input type="radio" id="cash" name="basket-payment" class="default-radio"/>
+					<label for="cash" class="default-radio-label"><span></span>Оплата наличными при получении в точке выдачи</label>
 
 					<div class="basket-payment__title">Комментарий к заказу:</div>
 					<textarea class="basket-payment__textarea" placeholder="Ваш комментарий"></textarea>	

@@ -17,10 +17,13 @@
 	<link rel="mask-icon" href="img\favicons/safari-pinned-tab.svg" color="#55974d">
 	<meta name="theme-color" content="#ffffff">
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="libs/normalize/normalize.css" rel="stylesheet">
 	<link href="libs/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<!--dd the new slick-theme.css if you want the default styling-->
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<link href="css/main.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -624,7 +627,20 @@
 				<div class="comparison">
 					<div class="comparison__headline">Вы сравниваете</div>
 					<div class="comparison__body">
+						<div class="characteristics__filter">
+								<form action="">
+									<div class="characteristics__filter-item">
+										<input type="radio" id="all-characteristics" name="characteristics__filter" class="default-radio" checked/>
+										<label for="all-characteristics" class="default-radio-label"><span></span>Все характеристики</label>
+									</div>
+									<div class="characteristics__filter-item">
+										<input type="radio" id="only-characteristics" name="characteristics__filter" class="default-radio"/>
+										<label for="only-characteristics" class="default-radio-label"><span></span>Только отличия</label>
+									</div>
+								</form>
+							</div>
 						<div class="comparison__properties">
+
 							<ul class="characteristics">
 								<div class="characteristics__title"><img src="img/icon-comporison.png" alt="">Характеристики</div>
 								<li class="characteristics__item">Мощность, л.с. (кВт)</li>
@@ -635,7 +651,7 @@
 								<li class="characteristics__item">Рабочий объем, см3</li>
 								<li class="characteristics__item">Тип топлива</li>
 								<li class="characteristics__item">Ширина культивации, см</li>
-								<li class="characteristics__item">Обороты фрез, об/мин</li>
+								<li class="characteristics__item">Длиное свойство в две строки, об/мин</li>
 								<li class="characteristics__item">Глубина обработки, см</li>
 								<li class="characteristics__item">Рабочий объем, см3</li>
 								<li class="characteristics__item">Тип топлива</li>
@@ -647,7 +663,7 @@
 							</ul>
 						</div>
 						<div class="comparison__product">
-							<div id="comparison-slider" class="top-product__slider owl-carousel">
+							<div id="comparison-slider" class="top-product__slider">
 								<div class="card-product">
 									<div class="card-product__delete">удалить</div>
 									<img src="img/home/rating.png" alt="" class="card-product__rating">
@@ -655,40 +671,50 @@
 										<div class="card-product__status card-product__status_red"><span class="card-product__status-text">new</span></div>
 										<a href="#"><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
 									</div>
-									<a href="#" class="card-product__title">
-										Мотокультиватор
-										НЕВА МК-80
-									</a>
+									<a href="#" class="card-product__title">Мотокультиватор НЕВА МК-80</a>
 									<div class="card-product__code">Код: 112768</div>
 									<div class="card-product__price">12 490 <span class="icon-rub"></span></div>
 									<div class="card-product__old-price">17 490 <span class="icon-rub"></span></div>
 									<div class="card-product__availability">
-										<span class="card-product__availability-icon"></span>
-										в наличии
+										<span class="card-product__availability-icon"></span>в наличии
 									</div>
 									<a href="#" class="card-product__btn">
-										<span class="card-product__btn-icon"></span>
-										В КОРЗИНУ
+										<span class="card-product__btn-icon"></span>В КОРЗИНУ
 									</a>
 
 									<ul class="characteristics">
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
-										<li class="characteristics__item">1+0</li>
 									</ul>
 								</div><!-- card-product -->
 								<div class="card-product">
@@ -696,129 +722,216 @@
 									<img src="img/home/rating.png" alt="" class="card-product__rating">
 									<div class="card-product__banner">
 										<div class="card-product__status card-product__status_red"><span class="card-product__status-text">new</span></div>
-										<a href=""><img src="img/home/product2.png" alt="" class="card-product__photo"></a>
+										<a href="#"><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
 									</div>
-									<a href="#" class="card-product__title">
-										Мотокультиватор
-										НЕВА МК-80
-									</a>
+									<a href="#" class="card-product__title">Мотокультиватор НЕВА МК-80</a>
 									<div class="card-product__code">Код: 112768</div>
 									<div class="card-product__price">12 490 <span class="icon-rub"></span></div>
 									<div class="card-product__old-price">17 490 <span class="icon-rub"></span></div>
 									<div class="card-product__availability">
-										<span class="card-product__availability-icon"></span>	в наличии
+										<span class="card-product__availability-icon"></span>в наличии
 									</div>
 									<a href="#" class="card-product__btn">
-										<span class="card-product__btn-icon"></span>
-										В КОРЗИНУ
+										<span class="card-product__btn-icon"></span>В КОРЗИНУ
 									</a>
+
 									<ul class="characteristics">
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
-										<li class="characteristics__item">1+0</li>
 									</ul>
 								</div><!-- card-product -->
 								<div class="card-product">
 									<div class="card-product__delete">удалить</div>
-
 									<img src="img/home/rating.png" alt="" class="card-product__rating">
 									<div class="card-product__banner">
 										<div class="card-product__status card-product__status_red"><span class="card-product__status-text">new</span></div>
-										<a href=""><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
+										<a href="#"><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
 									</div>
-									<a href="#" class="card-product__title">
-										Мотокультиватор
-										НЕВА МК-80
-									</a>
+									<a href="#" class="card-product__title">Мотокультиватор НЕВА МК-80</a>
 									<div class="card-product__code">Код: 112768</div>
 									<div class="card-product__price">12 490 <span class="icon-rub"></span></div>
 									<div class="card-product__old-price">17 490 <span class="icon-rub"></span></div>
 									<div class="card-product__availability">
-										<span class="card-product__availability-icon"></span>
-										в наличии
+										<span class="card-product__availability-icon"></span>в наличии
 									</div>
 									<a href="#" class="card-product__btn">
-										<span class="card-product__btn-icon"></span>
-										В КОРЗИНУ
+										<span class="card-product__btn-icon"></span>В КОРЗИНУ
 									</a>
+
 									<ul class="characteristics">
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
-										<li class="characteristics__item">1+0</li>
 									</ul>
 								</div><!-- card-product -->
 								<div class="card-product">
 									<div class="card-product__delete">удалить</div>
-
 									<img src="img/home/rating.png" alt="" class="card-product__rating">
 									<div class="card-product__banner">
 										<div class="card-product__status card-product__status_red"><span class="card-product__status-text">new</span></div>
-										<a href=""><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
+										<a href="#"><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
 									</div>
-									<a href="#" class="card-product__title">
-										Мотокультиватор
-										НЕВА МК-80
-									</a>
+									<a href="#" class="card-product__title">Мотокультиватор НЕВА МК-80</a>
 									<div class="card-product__code">Код: 112768</div>
 									<div class="card-product__price">12 490 <span class="icon-rub"></span></div>
 									<div class="card-product__old-price">17 490 <span class="icon-rub"></span></div>
 									<div class="card-product__availability">
-										<span class="card-product__availability-icon"></span>
-										в наличии
+										<span class="card-product__availability-icon"></span>в наличии
 									</div>
 									<a href="#" class="card-product__btn">
-										<span class="card-product__btn-icon"></span>
-										В КОРЗИНУ
+										<span class="card-product__btn-icon"></span>В КОРЗИНУ
 									</a>
+
 									<ul class="characteristics">
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
 										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
 										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
 										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
 										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
 										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
 										<li class="characteristics__item">50</li>
-										<li class="characteristics__item">1+0</li>
 									</ul>
 								</div><!-- card-product -->
+								<div class="card-product">
+									<div class="card-product__delete">удалить</div>
+									<img src="img/home/rating.png" alt="" class="card-product__rating">
+									<div class="card-product__banner">
+										<div class="card-product__status card-product__status_red"><span class="card-product__status-text">new</span></div>
+										<a href="#"><img src="img/home/product1.png" alt="" class="card-product__photo"></a>
+									</div>
+									<a href="#" class="card-product__title">Мотокультиватор НЕВА МК-80</a>
+									<div class="card-product__code">Код: 112768</div>
+									<div class="card-product__price">12 490 <span class="icon-rub"></span></div>
+									<div class="card-product__old-price">17 490 <span class="icon-rub"></span></div>
+									<div class="card-product__availability">
+										<span class="card-product__availability-icon"></span>в наличии
+									</div>
+									<a href="#" class="card-product__btn">
+										<span class="card-product__btn-icon"></span>В КОРЗИНУ
+									</a>
+
+									<ul class="characteristics">
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
+										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
+										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
+										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
+										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
+										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
+										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
+										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
+										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
+										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
+										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Количество передач</li>
+										<li class="characteristics__item">1+0</li>
+										<li class="characteristics__item-title">Рабочий объем, см3</li>
+										<li class="characteristics__item">126</li>
+										<li class="characteristics__item-title">Мощность, л.с. (кВт)</li>
+										<li class="characteristics__item">2</li>
+										<li class="characteristics__item-title">Двигатель</li>
+										<li class="characteristics__item">EX16</li>
+										<li class="characteristics__item-title">Топливный бак, л</li>
+										<li class="characteristics__item">50</li>
+										<li class="characteristics__item-title">Масса, кг</li>
+										<li class="characteristics__item">50</li>
+									</ul>
+								</div><!-- card-product -->
+
 							</div><!-- top-product__slider -->
+
 						</div>
 					</div>
 				</div>
@@ -908,6 +1021,7 @@
 	<!-- SCRIPTS -->
 	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
 	<script src="libs/owlcarousel2/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

@@ -19,6 +19,9 @@
 
 	<link href="libs/normalize/normalize.css" rel="stylesheet">
 	<link href="libs/owlcarousel2/css/owl.carousel.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<!--dd the new slick-theme.css if you want the default styling-->
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<link href="css/main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
@@ -1148,7 +1151,7 @@
 						<span class="footer__schedule-icon"></span>
 						Пн.-Пт: 9:00-18.00
 					</div>
-					<a href="#" class="footer__btn">обратная связь</a>
+					<a href="#" id="popup__feedback" class="footer__btn">обратная связь</a>
 				</div><!-- footer__contact -->
 				<p class="footer__descr">
 					Информация на сайте www.lesidom.ru не является публичной офертой. <br>
@@ -1175,11 +1178,11 @@
 					<div class="c-popup">
 						<div class="c-popup__left">
 							<ul class="c-popup__nav">
-								<li class="c-popup__nav-item"><a href="#" class="c-popup__nav-link">Авторизация</a></li>
-								<li class="c-popup__nav-item"><a href="#" class="c-popup__nav-link">Регистрация</a></li>
+								<li class="c-popup__nav-item"><a href="#" id="popup__login" class="c-popup__nav-link">Авторизация</a></li>
+								<li class="c-popup__nav-item"><a href="#" id="popup__registration" class="c-popup__nav-link">Регистрация</a></li>
 							</ul>
 						</div>
-						<div class="c-popup__right" style="display: none;">
+						<div class="c-popup__right c-popup-content_login" style="">
 							<div class="c-popup_close"></div>	<!--закрыть окно-->
 							<div class="c-popup_header">
 								<div class="c-popup_header-title">Авторизация</div>
@@ -1200,7 +1203,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="c-popup__right" style="">
+						<div class="c-popup__right c-popup-content_reg" style="display: none;">
 							<div class="c-popup_close"></div>	<!--закрыть окно-->
 							<div class="c-popup_header">
 								<div class="c-popup_header-title">Регистрация</div>
@@ -1227,8 +1230,7 @@
 										включающих цифры и/или латинские буквы
 									</p>
 									<input type="checkbox" id="agreement" name="agreement" class="default-checkbox"/>
-									<label for="agreement" class="default-checkbox-label form-registration__checkbox-label"><span></span>
-									</label>
+									<label for="agreement" class="default-checkbox-label form-registration__checkbox-label"><span></span></label>
 
 									<p class="form-registration__agreement-text">
 										Настоящим подтверждаю, что я ознакомлен и
@@ -1271,7 +1273,7 @@
 								<label for="" class="form__label">Фамилия
 									<input type="text" class="form__input">
 								</label>
-								<label for="" class="form__label">Комментарий к заказу:
+								<label for="" class="form__label">Комментарий:
 									<textarea class="form__textarea" rows="6"></textarea>
 								</label>
 
@@ -1290,6 +1292,7 @@
 	<!-- SCRIPTS -->
 	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
 	<script src="libs/owlcarousel2/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
