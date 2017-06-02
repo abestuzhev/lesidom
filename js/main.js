@@ -277,44 +277,27 @@ $(".personal__tab-caption").click(function() {
     });
 
 
+    $(".popup__vacancy").click(function(event) {
+        event.preventDefault();
+        $(".c-popup__vacancy").toggleClass('c-popup_show');
+        $('.c-popup_bg').toggleClass('is-visible');
+        $('body').toggleClass('body-popup');
+    });
+
+
     $('.btn__head-toggle').on('click', function(){
         $(this).toggleClass('btn__head-toggle--up');
 		$(this).parents().siblings('.js-show__body').slideToggle();
 	});
 
+    $('.job__footer .btn__head-toggle').on('click', function(){
+        $(this).toggleClass('btn__head-toggle--up');
+		$(this).parents('.js-show__body').slideToggle();
+	});
+
     $('.top-header__basket').on('click', function(){
         $(this).toggleClass('top-header__basket-show ');
 	});
-
-//comparison-slider
-
-    // var comparisonSlider = $("#comparison-slider").owlCarousel({
-    //     items:2,
-    //     loop:true,
-    //     smartSpeed:500,
-    //     autoHeight: true,
-    //     nav: true,
-    //     navText: ['<div class="top-product__arrow top-product__arrow_left"><span><</span></div>', '<div class="top-product__arrow top-product__arrow_right"><span>></span></div>'],
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         480:{
-    //             items:2
-    //         },
-    //         600:{
-    //             items:3
-    //         }
-    //     }
-    // });
-
-//	удаление карточки в сравнении товара
-// 	$('.card-product__delete').on('click', function(){
-// 		$(this).parents('.owl-item').hide();
-// 		counter--;
-// 		comparisonSlider.data('owlCarousel').removeItem(0);
-//
-// 	});
 
     $('#comparison-slider').slick({
         autoplay: false,
@@ -367,6 +350,20 @@ $(".personal__tab-caption").click(function() {
         $('.c-popup-content_reg').siblings('.c-popup__right').hide();
         $('.c-popup-content_reg').show();
 	});
+    
+    $('.filter__mobile .btn').on('click', function(e){
+        e.preventDefault();
+        $('.filter').toggle();
+        $('.c-popup_bg').toggleClass('is-visible');
+        $('body').toggleClass('body-popup');
+    });
+
+    $('.filter__mobile-title .c-popup_close').on('click', function(e){
+        e.preventDefault();
+        $('.filter').toggle();
+        $('.c-popup_bg').removeClass('is-visible');
+        $('body').removeClass('body-popup');
+    });
 });
 
 
