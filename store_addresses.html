@@ -643,8 +643,8 @@
                       myMap = new ymaps.Map('map', {
                           // При инициализации карты, обязательно нужно указать
                           // ее центр и коэффициент масштабирования
-                          center: [55.70572079444501,37.68940358465577],
-                          zoom: 11
+                          center: [62.9845,41.2102],
+                          zoom: 6
                       });
 
                       myMap.geoObjects.events.add([
@@ -656,7 +656,7 @@
                           });
                       });
 
-                      shop1 = new ymaps.Placemark([55.70572079444501,37.68940358465577], {
+                      shopBereznik = new ymaps.Placemark([62.8632,42.6866], {
                           name: 'Березник',
 						  address: 'ул. П. Виноградова, 211',
 						  phoneNumber: '(8182)65-27-05',
@@ -684,33 +684,338 @@
                           balloonAutoPan: false
                       }),
 
-                          shop2 = new ymaps.Placemark([55.733966095419056,37.62490019595958], {
-                              name: 'Няндома',
-                              address: 'ул. Первомайская, 31',
-							  phoneNumber: '(81838)6-26-43',
-                              mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
-                          }, {
-                              iconImageHref: 'img/map/icon-point.png',
-                              iconImageSize: [32, 42],
-                              iconImageOffset: [-18, -56],
-                              balloonContentSize: [289, 193],
-                              balloonLayout: "default#imageWithContent",
-                              balloonImageHref: 'img/map//baloon-bg.png',
-                              balloonImageOffset: [0, -70],
-                              balloonImageSize: [289, 193],
-                              balloonShadow: false,
-                              balloonAutoPan: false
-                          }),
+                      shopArh1 = new ymaps.Placemark([64.5389,40.5247], {
+                          name: 'Архангельск',
+                          address: 'ул. Ломоносова, 135',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopArh2 = new ymaps.Placemark([64.5764,40.5083], {
+                          name: 'Архангельск',
+                          address: 'пр. Никольский, 56/2',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopArh3 = new ymaps.Placemark([64.5553,40.5603], {
+                          name: 'Архангельск',
+                          address: 'ул. Гагарина, 46',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopArh4 = new ymaps.Placemark([64.5333,40.5861], {
+                          name: 'Архангельск',
+                          address: 'пр. Московский, 25/2',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopArh5 = new ymaps.Placemark([64.5586,40.5782], {
+                          name: 'Архангельск',
+                          address: 'Окружное шоссе, 13',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopArh6 = new ymaps.Placemark([64.5523,40.5563], {
+                          name: 'Архангельск',
+                          address: 'ул. Тимме, 23',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopNovodvinsk = new ymaps.Placemark([64.4114,40.8174], {
+                          name: 'Новодвинск',
+                          address: ' ул. Советов, 29/1',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopSevsk1 = new ymaps.Placemark([64.5520,39.7961], {
+                          name: 'Северодвинск',
+                          address: 'ул. Ломоносова, 75',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopSevsk2 = new ymaps.Placemark([64.5755,39.8444], {
+                          name: 'Северодвинск',
+                          address: 'Архангельское шоссе, 41',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopNyndoma = new ymaps.Placemark([61.6660,40.1936], {
+                          name: 'Няндома',
+                          address: 'ул. Первомайская, 31',
+						  phoneNumber: '(81838)6-26-43',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopVelsk = new ymaps.Placemark([61.0661,42.1003], {
+                          name: 'Вельск',
+                          address: 'ул. Гагарина, 40',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopOkt = new ymaps.Placemark([61.0917,43.1737], {
+                          name: 'Октябрьский',
+                          address: 'ул. Заводская, 5а',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopToyma = new ymaps.Placemark([62.2345,45.0027], {
+                          name: 'Верхняя Тойма',
+                          address: 'ул. Угрюмова, 6',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopKargopol = new ymaps.Placemark([61.5054,38.9472], {
+                          name: 'Каргополь',
+                          address: 'ул. Дыбцына, 22',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopKotlas = new ymaps.Placemark([61.2590,46.6403], {
+                          name: 'Котлас',
+                          address: 'ул. Володарского, 21',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+
+                      shopOnega = new ymaps.Placemark([63.9105,38.1019], {
+                          name: 'Онега',
+                          address: 'ул. Победы, 6',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
+
+                      shopPleseck = new ymaps.Placemark([62.7133,40.2745], {
+                          name: 'Плесецк',
+                          address: 'ул. Садовая, 33',
+						  phoneNumber: '(81823)5-56-68',
+                          mode: 'пн. — пт.: 10:00 – 21:00 <br> пн. — пт.: 10:00 – 21:00'
+                      }, {
+                          iconImageHref: 'img/map/icon-point.png',
+                          iconImageSize: [32, 42],
+                          iconImageOffset: [-18, -56],
+                          balloonContentSize: [289, 193],
+                          balloonLayout: "default#imageWithContent",
+                          balloonImageHref: 'img/map//baloon-bg.png',
+                          balloonImageOffset: [0, -70],
+                          balloonImageSize: [289, 193],
+                          balloonShadow: false,
+                          balloonAutoPan: false
+                      }),
 
 
 
-                          // Создаем коллекцию, в которую будем добавлять метки
-                          myCollection = new ymaps.GeoObjectCollection();
+                      // Создаем коллекцию, в которую будем добавлять метки
+                      myCollection = new ymaps.GeoObjectCollection();
 
                       //Добавляем метки в коллекцию геообъектов.
                       myCollection
-                          .add(shop1)
-                          .add(shop2);
+                          .add(shopArh1)
+                          .add(shopArh2)
+                          .add(shopArh3)
+                          .add(shopArh4)
+                          .add(shopArh5)
+                          .add(shopArh6)
+                          .add(shopNovodvinsk)
+                          .add(shopSevsk1)
+                          .add(shopSevsk2)
+                          .add(shopBereznik)
+                          .add(shopVelsk)
+                          .add(shopOkt)
+                          .add(shopToyma)
+                          .add(shopKargopol)
+                          .add(shopKotlas)
+                          .add(shopOnega)
+                          .add(shopPleseck)
+                          .add(shopNyndoma);
 
                       // Создаем шаблон для отображения контента балуна
                       var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
