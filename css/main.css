@@ -1969,6 +1969,9 @@ body,
 .top-product .owl-carousel .owl-nav.disabled {
   display: inline-block;
 }
+.top-product .owl-carousel .owl-item {
+  text-align: center;
+}
 /*====================== CARD-PRODUCT =========================*/
 .card-product {
   display: inline-block;
@@ -2001,7 +2004,7 @@ body,
   background: url('../img/sprite.png') -79px 0 no-repeat;
 }
 @media only screen and (max-width: 600px) {
-  .card-product {
+  .products-level2__card-product-wrapper .card-product {
     width: 49%;
   }
 }

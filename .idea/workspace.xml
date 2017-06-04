@@ -144,8 +144,8 @@
           <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/main.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+                <state relative-caret-position="486">
+                  <caret line="2287" column="12" lean-forward="false" selection-start-line="2287" selection-start-column="12" selection-end-line="2287" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -187,8 +187,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.basket-small__item</find>
-      <find>top-header__basket</find>
       <find>.brands-info__btn</find>
       <find>site-map__headline</find>
       <find>new-product-slider</find>
@@ -217,6 +215,8 @@
       <find>.map__sub-list:before</find>
       <find>to-</find>
       <find>to-top</find>
+      <find>@media only screen and (max-width: 600px) {</find>
+      <find>top-product</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,8 +249,8 @@
         <option value="$PROJECT_DIR$/promotions_open.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/less/main.less" />
         <option value="$PROJECT_DIR$/brands.html" />
+        <option value="$PROJECT_DIR$/less/main.less" />
       </list>
     </option>
   </component>
@@ -463,12 +463,12 @@
       <workItem from="1496299408119" duration="3924000" />
       <workItem from="1496389030817" duration="8304000" />
       <workItem from="1496409897334" duration="1072000" />
-      <workItem from="1496604773787" duration="2945000" />
+      <workItem from="1496604773787" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107665000" />
+    <option name="totallyTimeSpent" value="108655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,18 +866,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brands.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="817" column="26" lean-forward="false" selection-start-line="817" selection-start-column="26" selection-end-line="817" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="2287" column="12" lean-forward="false" selection-start-line="2287" selection-start-column="12" selection-end-line="2287" selection-end-column="12" />
           <folding />
         </state>
       </provider>
