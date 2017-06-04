@@ -123,22 +123,59 @@ section {padding: 50px 0;}
   padding: 0 25px;
 }
 
-.to-top {
-  position: absolute;
-  right: -40px;
-  top: 35%;
-  z-index: 10;
-}
+//.to-top {
+//  position: absolute;
+//  right: -40px;
+//  top: 35%;
+//  z-index: 10;
+//}
 
-@media only screen and (max-width: 1200px) {
-  .to-top {display: none;}
+.to-top {
+  display: inline-block;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 85px;
+  right: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  cursor: pointer;
 }
 
 .to-top__icon {
-  position: fixed;
-  transition: all .3s ease-in;
-  &:hover {opacity: .4;}
+  display: block;
+  background-color: #000;
 }
+.to-top.cd-is-visible, .to-top.cd-fade-out, .no-touch .to-top:hover {
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.to-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.to-top.cd-fade-out {
+  opacity: .5;
+}
+.no-touch .to-top:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+//@media only screen and (max-width: 1200px) {
+//  .to-top {display: none;}
+//}
+
+//.to-top__icon {
+//  position: fixed;
+//  transition: all .3s ease-in;
+//  &:hover {opacity: .4;}
+//}
 
 .text-center {
   text-align: center;
@@ -2841,9 +2878,7 @@ body,
   top: 0;
   left: 0;
   border-left: 1px dotted @black;
-  height: -webkit-calc(100% - 15px);
-  height: -moz-calc(100% - 15px);
-  height: calc(100% - 15px);
+  height: 98%;
 }
 
 .map__sub-list_active {
@@ -3425,7 +3460,9 @@ body,
     margin: auto;
   }
   @media only screen and (max-width: 430px) {width: 100%;}
+
 }
+
 
 .other-info__item {
   position: relative;
@@ -3581,6 +3618,8 @@ body,
   height: 100%;
   z-index: 2;
 }
+
+
 
 /*===============================================================
 ======================== CONTACT PAGE ===========================
@@ -4954,17 +4993,12 @@ body,
 }
 
 .news-open__btn {
-  width: 141px;
-  height: 26px;
-  line-height: 26px;
   margin-top: 20px;
   font-size: 12px;
   text-transform: none;
   @media only screen and (max-width: 600px) {
     width: 100%;
-    height: 41px;
     text-transform: uppercase;
-    line-height: 41px;
   }
 }
 
@@ -5545,7 +5579,16 @@ body,
 /*===============================================================
 ====================== CERTIFICATE PAGE =========================
 ===============================================================*/
-.certificate {width: 780px;}
+.certificate {
+  width: 780px;
+  text-align: center;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
 
 .certificate__item {
   position: relative;
@@ -5559,11 +5602,14 @@ body,
   overflow: hidden;
   margin-right: 3px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-align: center;
   &:nth-child(4n+4) {margin-right: 0;}
-  &_optim {background-image: url("../img/certificates/optim.png");}
-  &_oxxon {background-image: url("../img/certificates/oxxon.png");}
-  &_osram {background-image: url("../img/certificates/osram.png");}
   &:hover .cerificate__increase {opacity: 1;}
+
+  img {
+    width: 100%;
+  }
 }
 
 .certificate__brand {

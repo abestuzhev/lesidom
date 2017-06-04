@@ -116,22 +116,41 @@ section {
   padding: 0 25px;
 }
 .to-top {
-  position: absolute;
-  right: -40px;
-  top: 35%;
-  z-index: 10;
-}
-@media only screen and (max-width: 1200px) {
-  .to-top {
-    display: none;
-  }
+  display: inline-block;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 85px;
+  right: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  cursor: pointer;
 }
 .to-top__icon {
-  position: fixed;
-  transition: all 0.3s ease-in;
+  display: block;
+  background-color: #000;
 }
-.to-top__icon:hover {
-  opacity: .4;
+.to-top.cd-is-visible,
+.to-top.cd-fade-out,
+.no-touch .to-top:hover {
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.to-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.to-top.cd-fade-out {
+  opacity: .5;
+}
+.no-touch .to-top:hover {
+  background-color: white;
+  opacity: 1;
 }
 .text-center {
   text-align: center;
@@ -2477,9 +2496,7 @@ body,
   top: 0;
   left: 0;
   border-left: 1px dotted #4a4a4a;
-  height: -webkit-calc(85%);
-  height: -moz-calc(85%);
-  height: calc(85%);
+  height: 98%;
 }
 .map__sub-list_active {
   display: block;
@@ -4491,9 +4508,6 @@ body,
   line-height: 18px;
 }
 .news-open__btn {
-  width: 141px;
-  height: 26px;
-  line-height: 26px;
   margin-top: 20px;
   font-size: 12px;
   text-transform: none;
@@ -4501,9 +4515,7 @@ body,
 @media only screen and (max-width: 600px) {
   .news-open__btn {
     width: 100%;
-    height: 41px;
     text-transform: uppercase;
-    line-height: 41px;
   }
 }
 /*======================== SOCIAL =============================*/
@@ -5046,6 +5058,17 @@ body,
 ===============================================================*/
 .certificate {
   width: 780px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .certificate {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .certificate {
+    margin-top: 20px;
+  }
 }
 .certificate__item {
   position: relative;
@@ -5056,24 +5079,19 @@ body,
   border-radius: 5px;
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
   background: #fff no-repeat center top;
-  overflow: hidden;
   margin-right: 3px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-align: center;
 }
 .certificate__item:nth-child(4n+4) {
   margin-right: 0;
 }
-.certificate__item_optim {
-  background-image: url("../img/certificates/optim.png");
-}
-.certificate__item_oxxon {
-  background-image: url("../img/certificates/oxxon.png");
-}
-.certificate__item_osram {
-  background-image: url("../img/certificates/osram.png");
-}
 .certificate__item:hover .cerificate__increase {
   opacity: 1;
+}
+.certificate__item img {
+  width: 100%;
 }
 .certificate__brand {
   position: absolute;
