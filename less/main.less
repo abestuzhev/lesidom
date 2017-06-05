@@ -84,6 +84,12 @@ textarea:focus {
   outline: none;
 }
 
+input[type="file"] {
+  border: none;
+  outline: none;
+
+}
+
 :focus::-webkit-input-placeholder {color: transparent;}
 :focus::-moz-placeholder {color: transparent;}
 :focus:-moz-placeholder {color: transparent;}
@@ -1657,6 +1663,7 @@ body,
 
 .catalog__item:hover {
   background-color: #68ba65;
+  border-color: #68ba65;
 }
 
 .catalog__item_active-sm {
@@ -3224,7 +3231,7 @@ body,
 
 }
 
-.product-info__tab-caption:before {
+.product-info__tab-caption::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4093,6 +4100,7 @@ body,
   &:hover {
     color: #fff;
     background-color: @green;
+    border-color: @green;
   }
 }
 
@@ -4272,6 +4280,19 @@ body,
       background: url('../img/icon-redact.png') 0 0 no-repeat;
     }
   }
+}
+
+.form__file {
+  input[type="file"]{
+    display: none;
+  }
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px;
+  border: 3px solid #cdd2d9;
+  border-radius: 4px;
+  color: #4a4a4a;
+
 }
 
 .form__input {
@@ -4906,10 +4927,7 @@ body,
 }
 
 .news__btn {
-  width: 99px;
-  height: 26px;
   font-size: 12px;
-  line-height: 26px;
   text-transform: none;
   @media only screen and (max-width: 600px) {
     width: 100%;
@@ -5139,7 +5157,13 @@ body,
   text-align: center;
   background-color: #fff;
   &:nth-child(4n+4) {margin-right: 0;}
-  &:hover {border: 1px solid #435158;}
+  &:hover {
+    //border: 1px solid #435158;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(67,81,88,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(67,81,88,1);
+    box-shadow: 0px 0px 0px 2px rgba(67,81,88,1);
+    border-color: transparent;
+  }
   & img {vertical-align: middle;}
   @media only screen and (max-width: 768px) {
     &:nth-child(n+17) {display: none;}
@@ -5180,6 +5204,19 @@ body,
   &+& {margin-top: 10px;}
   &:first-child {margin-top: 10px;}
   &:hover {opacity: .6;}
+}
+
+.brands-info__variety-item--active {
+  background-color: #68ba65;
+  color: #fff;
+}
+
+.brands-info__variety-item--active .brands-info__variety-icon{
+  background-color: #fff;
+}
+
+.brands-info__variety-item--active .brands-info__variety-icon-arrow {
+  background: url(../img/variety-item--active.png) 0 0 no-repeat;
 }
 
 .brands-info__variety-link {
@@ -5474,6 +5511,12 @@ body,
   border: none;
   background: url("../img/sprite.png") no-repeat -37px 0;
   cursor: pointer;
+}
+
+.results__criterion,
+.results__filter,
+.results__product {
+  margin-bottom: 18px;
 }
 
 /*===============================================================
@@ -6896,6 +6939,10 @@ ul.tabs li.active::after {
     border: none;
     outline: none;
     color:#6b6b6b;
+
+    option:hover {
+      background-color: #68ba65;
+    }
   }
 
 }
@@ -7299,6 +7346,57 @@ pop-up
   font-weight: 100;
 }
 
+
+.c-popup__reg .form__label {
+  position: relative;
+  padding-left: 64px;
+
+  &::after {
+    content:'';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top:18px;
+    left: 0;
+  }
+
+
+}
+
+.c-popup__reg .form__label-name::after {
+  content: '';
+  background: url(../img/icon-reg-1.png) 0 0 no-repeat;
+}
+
+.c-popup__reg .form__label-twoname::after {
+  content: '';
+  background: url(../img/icon-reg-2.png) 0 0 no-repeat;
+}
+
+.c-popup__reg .form__label-comment::after {
+  content: '';
+  background: url(../img/icon-reg-3.png) 0 0 no-repeat;
+}
+.c-popup__reg .l-btn {
+  padding-left: 64px;
+}
+.code-security {
+  padding-left: 64px;
+  margin: 15px 0 20px;
+}
+
+
+.c-popup__click .c-popup {
+  width: 593px;
+}
+
+.c-popup__click .c-popup form {
+  padding: 0 110px;
+}
+
+.c-popup__click .c-popup_body {
+  padding: 12px 28px 24px;
+}
 
 /*popup @media*/
 
