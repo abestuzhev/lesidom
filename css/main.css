@@ -1282,6 +1282,7 @@ body,
 ========================== CATALOG ==============================
 ===============================================================*/
 .catalog {
+  width: 100%;
   position: relative;
   display: inline-block;
   float: left;
@@ -3790,10 +3791,8 @@ body,
 .form__input {
   position: relative;
   width: 100%;
-  line-height: 35px;
   margin-top: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   border: 5px solid  #f2f5f8;
   border-radius: 10px;
   background-color: #fff;
