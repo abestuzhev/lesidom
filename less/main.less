@@ -477,6 +477,11 @@ body,
   transition: opacity 0.2s ease-in;
 }
 
+.top-header__nav-link_active .top-header__nav-icon-percent,
+.top-footer__nav-link_active .footer__icon-percent {
+  background: url("../img/percent-icon.png") no-repeat 0 0;
+}
+
 .top-header__nav-link:hover .top-header__nav-icon-percent {
   opacity: .6;
 }
@@ -516,6 +521,7 @@ body,
 }
 
 .top-header__container {
+  position: relative;
   max-width: 1045px;
   margin: auto;
   padding: 10px 25px;
@@ -581,7 +587,7 @@ body,
   display: inline-block;
   vertical-align: middle;
   background: url("../img/sprite.png") no-repeat -42px -70px;
-  width: 26px;
+  width: 27px;
   height: 26px;
 }
 
@@ -776,6 +782,86 @@ body,
     font-size: 10px;
   }
 
+}
+
+/*иконка сравнение в header*/
+.comparison__icon {
+  position: absolute;
+  z-index: 100000;
+  right: 0;
+  top: -40px;
+
+  &-number {
+    display: inline-block;
+    font-size: 14px;
+    color: @green;
+    margin-right: 6px;
+  }
+  &-image {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-color: #ccc;
+  }
+}
+
+.popup__comparison-small {
+  display: none;
+  padding: 12px 16px;
+  text-align: center;
+
+  .btn-popup__basket {
+    float: none;
+  }
+}
+.comparison__icon:hover .popup__comparison-small {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 240px;
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.popup__comparison-list {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.popup__comparison-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.popup__comparison-link {
+  color: #2b2b2b;
+}
+
+.popup__comparison-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  cursor: pointer;
+  border-radius: 100px;
+  background: url(../img/sprite.png) -79px 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  &::after {
+    content: '+';
+    display: block;
+    position: relative;
+    left: 1px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 20px;
+    transform: rotate(45deg);
+  }
 }
 
 /*===============================================================
