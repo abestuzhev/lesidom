@@ -24,6 +24,7 @@
 	<!--dd the new slick-theme.css if you want the default styling-->
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addition.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -1014,6 +1015,86 @@
 		</footer>
 	</div>
 
+
+	<a href="#" id="test-comparison">попап</a>
+	<!--********************************************-->
+
+	<div class="c-popup_container c-popup__comparison-add">
+		<table class="c-popup_container-2">
+			<tr>
+				<td class="c-popup_container-3">
+					<!--new pop-up-->
+					<div class="c-popup">
+						<div class="c-popup_close"></div>	<!--закрыть окно-->
+						<div class="c-popup_header">
+							<div class="c-popup_header-title">Товар добавлен к сравнению</div>
+						</div><!--end c-popup_header-->
+						<div class="c-popup_body">
+							<div class="comparison-add">
+								<div class="comparison-add__header">
+									<div class="comparison-add-card">
+										<div class="comparison-add-card__img"><img src="https://avatars.mds.yandex.net/get-mpic/96484/img_id754909793432933102/9hq" alt=""></div>
+										<div class="comparison-add-card__info">
+											<div class="comparison-add-card__name">Мотокультиватор НЕВА МК-80</div>
+											<div class="comparison-add-card__code">Код: 112768</div>
+										</div>
+									</div>
+								</div>
+								<div class="comparison-add__body">
+									<div class="comparison-add__title">Сравнения ожидают:</div>
+									<ul class="comparison-add__list">
+										<li class="comparison-add__item">
+											<div class="comparison-add-card">
+												<div class="comparison-add-card__img"><img src="https://avatars.mds.yandex.net/get-mpic/96484/img_id754909793432933102/9hq" alt=""></div>
+												<div class="comparison-add-card__info">
+													<div class="card-product__delete">удалить</div>
+												</div>
+											</div>
+										</li>
+										<li class="comparison-add__item">
+											<div class="comparison-add-card">
+												<div class="comparison-add-card__img"><img src="https://avatars.mds.yandex.net/get-mpic/96484/img_id754909793432933102/9hq" alt=""></div>
+												<div class="comparison-add-card__info">
+													<div class="card-product__delete">удалить</div>
+												</div>
+											</div>
+										</li>
+										<li class="comparison-add__item">
+											<div class="comparison-add-card">
+												<div class="comparison-add-card__img"><img src="https://avatars.mds.yandex.net/get-mpic/96484/img_id754909793432933102/9hq" alt=""></div>
+												<div class="comparison-add-card__info">
+													<div class="card-product__delete">удалить</div>
+												</div>
+											</div>
+										</li>
+										<li class="comparison-add__item">
+											<div class="comparison-add-card">
+												<div class="comparison-add-card__img"><img src="https://avatars.mds.yandex.net/get-mpic/96484/img_id754909793432933102/9hq" alt=""></div>
+												<div class="comparison-add-card__info">
+													<div class="card-product__delete">удалить</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="comparison-add__buttons">
+									<a href="#" class="comparison-add__back">Перейти к сравнению <i class="icon-balance"></i></a>
+									<a href="#" class="comparison-add__next">Продолжить просмотр <i class="icon-next"></i></a>
+								</div>
+							</div>
+						</div>
+					</div><!--end popup-->
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!--задний фон модального окна-->
+	<div class="c-popup_bg"></div>
+	<!--********************************************-->
+
+
+
 	<div class="overley-page overley-page_blue"></div>
 
 
@@ -1022,6 +1103,18 @@
 	<script src="libs/owlcarousel2/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+        $(function(){
+            $("#test-comparison").click(function(event) {
+                event.preventDefault();
+                $(".c-popup__comparison-add").toggleClass('c-popup_show');
+                $('.c-popup_bg').toggleClass('is-visible');
+                $('body').toggleClass('body-popup');
+            });
+        });
+
+	</script>
 
 </body>
 </html>

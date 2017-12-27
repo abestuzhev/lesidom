@@ -1,0 +1,168 @@
+#test-comparison {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    display: block;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.c-popup__comparison-add .c-popup {
+    width: 525px;
+}
+
+.comparison-add {
+    color: #4a4a4a;
+}
+
+.comparison-add__header {
+    padding: 12px 0 24px;
+    border-bottom: 1px solid #d1d2d2;
+}
+.comparison-add__body {
+    padding: 18px 0;
+}
+
+.comparison-add-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.comparison-add-card::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.comparison-add-card__img {
+    width: 52px;
+    height: 52px;
+    margin-right: 14px;
+}
+
+.comparison-add-card__img img {
+
+}
+
+.comparison-add-card__info {
+}
+
+.comparison-add__title {
+    font-size: 13px;
+    margin-bottom: 24px;
+    display: block;
+    text-align: center;
+}
+
+.comparison-add-card__name {
+
+}
+
+.comparison-add-card__code {
+    color: #b4b4b4;
+}
+
+
+.comparison-add__list .comparison-add-card__img {
+    margin-right: 2px;
+}
+
+.comparison-add__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.comparison-add__item .card-product__delete::before{
+    content: '';
+    margin-top: -5px;
+}
+
+.comparison-add__item:last-child {
+    margin-right: 0;
+}
+
+
+.comparison-add__buttons {
+    text-align: center;
+}
+.comparison-add__buttons > a{
+    display: inline-block;
+    margin: 0 3px 8px;
+}
+
+
+.comparison-add__next,
+.comparison-add__back {
+    padding: 5px 16px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.comparison-add__next:hover,
+.comparison-add__back:hover {
+    opacity: .9;
+}
+
+.comparison-add__back {
+    color: #4a4a4a;
+    border: 3px solid #cdd2d9;
+}
+
+.comparison-add__next {
+    background-color: #68ba65;
+    border: 3px solid #68ba65;
+    color: #fff;
+}
+
+.icon-balance,
+.icon-next {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.icon-balance {
+    width: 18px;
+    height: 14px;
+    background: url(../img/sprite.png) -204px -69px no-repeat;
+
+}
+.icon-next {
+    width: 19px;
+    height: 15px;
+    background: url(../img/sprite.png) -143px -15px no-repeat;
+}
+
+
+@media (max-width: 760px) {
+    .c-popup__comparison-add .c-popup {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .comparison-add__item {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
